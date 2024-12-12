@@ -1,0 +1,31 @@
+<?php
+
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PageController;
+
+
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider and all of them will
+| be assigned to the "web" middleware group. Make something great!
+|
+*/
+
+Route::get('/', function () {
+    return view('welcome');
+})->name('home');
+
+
+
+// Route for the About Us page
+Route::get('/about', [PageController::class, 'about'])->name('about');
+
+// Route for the Our Services page
+Route::get('/services', [PageController::class, 'services'])->name('services');
+
+// Route for the Contact Us page
+Route::get('/contact', [PageController::class, 'contact'])->name('contact');
