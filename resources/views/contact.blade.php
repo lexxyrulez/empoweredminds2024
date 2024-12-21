@@ -4,51 +4,27 @@
 
 @section('content')
 
-<section id="hero" class="hero section dark-background">
-  <div class="container">
-    <div class="row gy-4">
-      <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
-        <h1>Empowering Minds, Building Futures</h1>
-        <p>Unlock your child's potential with inclusive, innovative, and personalized education tailored for every learner.</p>
-        <div class="d-flex">
-          <a href="#about" class="btn-get-started">Learn More</a>
-          <a href="https://drive.google.com/file/d/1nYAO4gSSusvDzannCjBe5X8cxlG4rPtv/view?usp=drive_link" class="glightbox btn-watch-video d-flex align-items-center">
-            <i class="bi bi-play-circle"></i><span>Watch Our Story</span>
-          </a>
-        </div>
-      </div>
-      <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="200">
-        <img src="assets/img/logo.png" class="img-fluid animated" alt="Empowered Minds">
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-<!-- Call To Action Section -->
-<section id="call-to-action" class="call-to-action section dark-background" style="background-image: url('assets/img/cta-bg.gif'); background-size: cover; background-position: center;">
+<section id="call-to-action" class="call-to-action section dark-background" style="background-image: url('assets/img/pencil.jpg'); background-size: cover; background-position: center;">
 
 <div class="container">
 <div class="row align-items-center" data-aos="zoom-in" data-aos-delay="100">
 
-  <!-- Text Content -->
-  <div class="col-xl-9 text-center text-xl-start">
-    <h3>Call To Action</h3>
-    <p>
-      "Join us to unlock your potential and embrace a journey of lifelong learning. We provide tailored programs designed to inspire, educate, and empower individuals to achieve their goals."
-    </p>
-  </div>
-
-  <!-- Call to Action Button -->
-  <div class="col-xl-3 cta-btn-container text-center">
-    <a class="cta-btn align-middle btn btn-primary" href="#">Enroll Now</a>
+<div class="container section-title" data-aos="fade-up">
+  <div class=" hero-img" data-aos="zoom-out" data-aos-delay="200">
+  <h2></h2>
+      </div>
+  
   </div>
 
 </div>
 </div>
 
 </section>
+
+
+
+
+
 
 <!-- /Call To Action Section -->
 
@@ -136,6 +112,30 @@
     </div>
 
   </div>
+
+</section>
+
+<!-- Call To Action Section -->
+<section id="call-to-action" class="call-to-action section dark-background" style="background-image: url('assets/img/cta-bg.gif'); background-size: cover; background-position: center;">
+
+<div class="container">
+<div class="row align-items-center" data-aos="zoom-in" data-aos-delay="100">
+
+  <!-- Text Content -->
+  <div class="col-xl-9 text-center text-xl-start">
+    <h3>Call To Action</h3>
+    <p>
+      "Join us to unlock your potential and embrace a journey of lifelong learning. We provide tailored programs designed to inspire, educate, and empower individuals to achieve their goals."
+    </p>
+  </div>
+
+  <!-- Call to Action Button -->
+  <div class="col-xl-3 cta-btn-container text-center">
+    <a class="cta-btn align-middle btn btn-primary" href="#">Enroll Now</a>
+  </div>
+
+</div>
+</div>
 
 </section>
 
