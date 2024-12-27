@@ -1,4 +1,4 @@
-<header id="header" class="header d-flex align-items-center fixed-top  padding: 1px; ">
+<header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
         <!-- Logo -->
         <a href="{{ route('home') }}" class="logo d-flex align-items-center me-auto">
