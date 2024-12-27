@@ -113,42 +113,6 @@
         </div>
       </div><!-- End Team Member -->
 
-      <!-- Team Member 3: Special Education Expert -->
-      <!--div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-        <div class="team-member d-flex align-items-start">
-          <div class="pic"><img src="assets/img/team/team-3.jpg" class="img-fluid" alt="Special Education Expert Image"></div>
-          <div class="member-info">
-            <h4>Michael Johnson</h4>
-            <span>Special Education Expert</span>
-            <p>Focused on creating a learning environment where every student can succeed, regardless of their challenges.</p>
-            <div class="social">
-              <a href=""><i class="bi bi-twitter-x"></i></a>
-              <a href=""><i class="bi bi-facebook"></i></a>
-              <a href=""><i class="bi bi-instagram"></i></a>
-              <a href=""><i class="bi bi-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
-      </div><!-- End Team Member -->
-
-      <!-- Team Member 4: Occupational Therapist -->
-      <!--div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-        <div class="team-member d-flex align-items-start">
-          <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt="Occupational Therapist Image"></div>
-          <div class="member-info">
-            <h4>Emily Williams</h4>
-            <span>Occupational Therapist</span>
-            <p>Specializing in helping students develop the skills necessary for daily living and academic success.</p>
-            <div class="social">
-              <a href=""><i class="bi bi-twitter-x"></i></a>
-              <a href=""><i class="bi bi-facebook"></i></a>
-              <a href=""><i class="bi bi-instagram"></i></a>
-              <a href=""><i class="bi bi-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
-      </div><!-- End Team Member -->
-
     </div>
 
   </div>
