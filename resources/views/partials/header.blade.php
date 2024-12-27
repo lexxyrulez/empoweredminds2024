@@ -1,7 +1,7 @@
 <nav style="background-color:#d57176" class="navbar navbar-expand-md navbar-dark fixed-top">
     <div class="container-fluid">
         <ul style="margin-left: 60px;" class="navbar-nav sm-icons">
-            <li><a class="nav-link"><i style="color: white" class="bi bi-telephone"></i> <span style="color: white">+255 XXX XXX XXX</span></a></li>
+            <li><a class="nav-link"><i style="color: white" class="bi bi-telephone"></i> <span style="color: white">+255742177051</span></a></li>
             <li><a class="nav-link"><i style="color: white" class="bi bi-envelope"></i><span style="color: white"> info@empoweredmindslearning</span></a></li>
         </ul>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
