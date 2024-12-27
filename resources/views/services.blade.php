@@ -4,7 +4,7 @@
 
 @section('content')
 
-<section id="call-to-action" class="call-to-action section dark-background" style="background-image: url('assets/img/services1.jpg'); background-size: cover; background-position: center;">
+<section id="call-to-action" class="call-to-action section dark-background" style="background-image: url('assets/img/teaching.jpg'); background-size: cover; background-position: center;">
 
 <div class="container">
 <div class="row align-items-center" data-aos="zoom-in" data-aos-delay="100">
@@ -39,19 +39,12 @@
       <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
         <div class="service-item position-relative">
           <div class="icon"><i class="bi bi-activity icon"></i></div>
-          <h4><a href="#" class="stretched-link">Individualized Homeschooling</a></h4>
+          <h4><a href="#" class="stretched-link">Inclusive Individualized Homeschooling</a></h4>
           <p>Tailored education plans for personalized learning at home.</p>
         </div>
       </div><!-- End Service Item -->
 
-      <!-- Inclusive Learning -->
-      <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
-        <div class="service-item position-relative">
-          <div class="icon"><i class="bi bi-bounding-box-circles icon"></i></div>
-          <h4><a href="#" class="stretched-link">Inclusive Learning</a></h4>
-          <p>Fostering an environment that embraces diverse learning needs.</p>
-        </div>
-      </div><!-- End Service Item -->
+     
 
       <!-- Early Childhood Education -->
       <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
@@ -71,14 +64,7 @@
         </div>
       </div><!-- End Service Item -->
 
-      <!-- Special Needs Education -->
-      <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="500">
-        <div class="service-item position-relative">
-          <div class="icon"><i class="bi bi-person-circle icon"></i></div>
-          <h4><a href="#" class="stretched-link">Special Needs Education</a></h4>
-          <p>Specialized programs to support students with unique learning needs.</p>
-        </div>
-      </div><!-- End Service Item -->
+     
 
       <!-- After School Tuitions -->
       <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="600">
@@ -113,73 +99,7 @@
 
 </section>
 
-<!-- Pricing Section -->
-<section id="pricing" class="pricing section light-background">
 
-  <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Pricing</h2>
-    <p>Select a plan that fits your schedule and budget at Empowered Minds Learning Center.</p>
-  </div><!-- End Section Title -->
-
-  <div class="container">
-
-    <div class="row gy-4">
-
-      <!-- 3 Days Plan -->
-      <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
-        <div class="pricing-item">
-          <h3>3 Days Plan</h3>
-          <h4><sup>$</sup>2000<span> / Year</span></h4>
-          <ul>
-            <li><i class="bi bi-check"></i> <span>Attend 3 days per week</span></li>
-            <li><i class="bi bi-check"></i> <span>Access to core curriculum</span></li>
-            <li><i class="bi bi-check"></i> <span>Standard educational resources</span></li>
-            <li class="na"><i class="bi bi-x"></i> <span>Full-time school access</span></li>
-            <li class="na"><i class="bi bi-x"></i> <span>Additional extracurricular activities</span></li>
-          </ul>
-          <a href="#" class="buy-btn">Buy Now</a>
-        </div>
-      </div><!-- End Pricing Item -->
-
-      <!-- 5 Days Plan -->
-      <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
-        <div class="pricing-item featured">
-          <h3>5 Days Plan</h3>
-          <h4><sup>$</sup>3000<span> / Year</span></h4>
-          <ul>
-            <li><i class="bi bi-check"></i> <span>Attend 5 days per week</span></li>
-            <li><i class="bi bi-check"></i> <span>Access to extended curriculum</span></li>
-            <li><i class="bi bi-check"></i> <span>Premium educational resources</span></li>
-            <li><i class="bi bi-check"></i> <span>Extra-curricular activities included</span></li>
-            <li class="na"><i class="bi bi-x"></i> <span>Full-time school access</span></li>
-          </ul>
-          <a href="#" class="buy-btn">Buy Now</a>
-        </div>
-      </div><!-- End Pricing Item -->
-
-      <!-- 6 Days Plan -->
-      <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="300">
-        <div class="pricing-item">
-          <h3>6 Days Plan</h3>
-          <h4><sup>$</sup>4000<span> / Year</span></h4>
-          <ul>
-            <li><i class="bi bi-check"></i> <span>Attend 6 days per week</span></li>
-            <li><i class="bi bi-check"></i> <span>Full access to all curriculum</span></li>
-            <li><i class="bi bi-check"></i> <span>Priority educational resources</span></li>
-            <li><i class="bi bi-check"></i> <span>Full-time school access</span></li>
-            <li><i class="bi bi-check"></i> <span>All extracurricular activities included</span></li>
-          </ul>
-          <a href="#" class="buy-btn">Buy Now</a>
-        </div>
-      </div><!-- End Pricing Item -->
-
-    </div>
-
-  </div>
-
-</section>
-<!-- /Pricing Section -->
 
 
 

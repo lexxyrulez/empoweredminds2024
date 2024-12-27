@@ -1,16 +1,17 @@
-<header id="header" class="header d-flex align-items-center fixed-top">
+<header id="header" class="header d-flex align-items-center fixed-top  padding: 1px; ">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
         <!-- Logo -->
         <a href="{{ route('home') }}" class="logo d-flex align-items-center me-auto">
             <!-- Uncomment the line below if you also wish to use an image logo -->
             <!-- <img src="{{ asset('assets/img/logo.png') }}" alt="Empowered Minds Logo"> -->
             <h1 class="sitename">EMPOWERED MINDS</h1>
+
         </a>
 
         <!-- Navigation -->
         <nav id="navmenu" class="navmenu">
             <ul>
-                <li><a href="{{ route('home') }}" class="active">Home</a></li>
+              
                 <li><a href="{{ route('about') }}">About Us</a></li>
                 <li><a href="{{ route('services') }}">Our Services</a></li>
                 <!--li><a href="">Our Team</a></li>
@@ -31,6 +32,6 @@
         </nav>
 
         <!-- Enroll Button -->
-        <a class="btn-getstarted" href="{{ route('contact') }}">Enroll Now</a>
+        <a class="btn-getstarted" href="{{ route('contact') }}" >Enroll Now</a>
     </div>
 </header>

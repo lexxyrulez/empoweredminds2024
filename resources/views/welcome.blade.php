@@ -8,13 +8,14 @@
 
 <section id="hero" class="hero section dark-background">
   <div class="container">
+  <h2></h2>
     <div class="row gy-4">
       <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
         <h1>Empowering Minds, Building Futures</h1>
-        <p>Unlock your child's potential with inclusive, innovative, and personalized education tailored for every learner.</p>
+        <p>Unlock your child's potential with inclusive, innovative, and personalized education tailored to every learner.</p>
         <div class="d-flex">
-          <a href="#about" class="btn-get-started">Learn More</a>
-          <a href="https://drive.google.com/file/d/1nYAO4gSSusvDzannCjBe5X8cxlG4rPtv/view?usp=drive_link" class="glightbox btn-watch-video d-flex align-items-center">
+          <a href="{{ route('about') }}" class="btn-get-started">Learn More</a>
+          <a href="https://www.instagram.com/empoweredminds_learning/profilecard/?igsh=aTF0c3E3enk3MHNt" class="glightbox btn-watch-video d-flex align-items-center">
             <i class="bi bi-play-circle"></i><span>Watch Our Story</span>
           </a>
         </div>
@@ -26,6 +27,24 @@
   </div>
 </section>
 
+<!--div class="container">
+    <div class="row gy-4">
+      <h2>Mission</h2>
+      <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+        <p>At Empowered Minds Learning Center, we believe in nurturing every learner's unique potential through inclusive and personalized education. Our programs are designed to foster independence, creativity, and academic excellence.</p>
+        <ul>
+          <li><i class="bi bi-check2-circle"></i> <span>Individualized homeschooling and support tailored to every learner's needs.</span></li>
+          <li><i class="bi bi-check2-circle"></i> <span>A team of experienced educators and collaborative specialists.</span></li>
+          <li><i class="bi bi-check2-circle"></i> <span>Inclusive and modern teaching methods with flexible options.</span></li>
+        </ul>
+      </div>
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+          <h2>Vission</h2>
+        <p>Empowered Minds is more than an educational center; it's a partner in creating exceptional futures for learners of all backgrounds. From early childhood to advanced studies, we provide a supportive and innovative environment that inspires growth.</p>
+        <a href="#services" class="read-more"><span>Discover Our Services</span><i class="bi bi-arrow-right"></i></a>
+      </div>
+    </div>
+  </div-->
 
 <!-- Clients Section -->
 <!--section id="clients" class="clients section light-background">
@@ -284,17 +303,35 @@
       <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
               <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-homeschooling">Homeschooling</li>
-              <li data-filter=".filter-inclusive">Inclusive Learning</li>
-              <li data-filter=".filter-earlychildhood">Early Childhood</li>
-              <li data-filter=".filter-support">In-School Support</li>
-              <li data-filter=".filter-specialneeds">Special Needs</li>
-              <li data-filter=".filter-tuitions">Tuitions</li>
-              <li data-filter=".filter-language">Language</li>
-              <li data-filter=".filter-extracurricular">Extracurriculars</li>
+              <li data-filter=".filter-homeschooling">Rebranding</li>
+              <li data-filter=".filter-inclusive">Launching</li>
+              <li data-filter=".filter-homeschooling">News 2</li>
+              <li data-filter=".filter-inclusive">News 3</li>
+              
           </ul>
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-homeschooling">
+                  <img src="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" class="img-fluid" alt="Homeschooling">
+                  <div class="portfolio-info">
+                      <h4>Rebranding</h4>
+                      <p>Join us as we celebrate a decade of transforming education and empowering young minds.</p>
+                      <a href="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" title="Homeschooling" data-gallery="portfolio-gallery-homeschooling" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                      <a href="homeschooling-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-inclusive">
+                  <img src="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid" alt="Inclusive Learning">
+                  <div class="portfolio-info">
+                      <h4>Launching</h4>
+                      <p>Top Award for Inclusive Education</p>
+                      <a href="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" title="Inclusive Learning" data-gallery="portfolio-gallery-inclusive" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                      <a href="inclusive-learning-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  </div>
+              </div>
+
+              <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
               <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-homeschooling">
                   <img src="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" class="img-fluid" alt="Homeschooling">
                   <div class="portfolio-info">
@@ -305,16 +342,7 @@
                   </div>
               </div>
 
-              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-inclusive">
-                  <img src="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid" alt="Inclusive Learning">
-                  <div class="portfolio-info">
-                      <h4>Annual Education Summit</h4>
-                      <p>Top Award for Inclusive Education</p>
-                      <a href="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" title="Inclusive Learning" data-gallery="portfolio-gallery-inclusive" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                      <a href="inclusive-learning-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                  </div>
-              </div>
-
+          
               </div>
       </div>
   </div>
@@ -326,7 +354,7 @@
 
   <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
-    <h2>Pricing</h2>
+    <h2>New Offers</h2>
     <p>Select a plan that fits your schedule and budget at Empowered Minds Learning Center.</p>
   </div><!-- End Section Title -->
 
@@ -410,18 +438,18 @@
 
           <div class="faq-item faq-active" data-aos="fade-up" data-aos-delay="200">
             <i class="faq-icon bi bi-question-circle"></i>
-            <h3>What is the main purpose of our program?</h3>
+            <h3>What curriculum do you follow?</h3>
             <div class="faq-content">
-              <p>Our mission is to empower our students and their families through holistic education and support. We believe that a strong foundation starts with a shared commitment from all stakeholders.</p>
+              <p></p>
             </div>
             <i class="faq-toggle bi bi-chevron-right"></i>
           </div><!-- End Faq item -->
 
           <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
             <i class="faq-icon bi bi-question-circle"></i>
-            <h3>How can I get involved as a parent?</h3>
+            <h3>What age groups do you serve?</h3>
             <div class="faq-content">
-              <p>As parents, your involvement is crucial. You can support us by staying engaged with your child's progress, participating in meetings, and helping foster a positive learning environment both at school and at home.</p>
+              <p></p>
             </div>
             <i class="faq-toggle bi bi-chevron-right"></i>
           </div><!-- End Faq item -->
@@ -446,9 +474,9 @@
 
           <div class="faq-item" data-aos="fade-up" data-aos-delay="600">
             <i class="faq-icon bi bi-question-circle"></i>
-            <h3>How do I contact the school in case of emergencies?</h3>
+            <h3>Do you support children with learning challenges? </h3>
             <div class="faq-content">
-              <p>You can contact us via the school hotline, our website’s contact form, or directly through our social media channels. We are always available to assist in any urgent matters, 24/7.</p>
+              <p></p>
             </div>
             <i class="faq-toggle bi bi-chevron-right"></i>
           </div><!-- End Faq item -->
@@ -500,7 +528,7 @@
           <div class="testimonial-item">
             <img src="assets/img/testimonials/testimonials-1.png" class="testimonial-img" alt="Saul Goodman">
             <h3>Saul Goodman</h3>
-            <h4>CEO &amp; Founder</h4>
+           
             <div class="stars">
               <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
             </div>
@@ -517,7 +545,7 @@
           <div class="testimonial-item">
             <img src="assets/img/testimonials/testimonials-2.png" class="testimonial-img" alt="Sara Wilsson">
             <h3>Sara Wilsson</h3>
-            <h4>Designer</h4>
+           
             <div class="stars">
               <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
             </div>
@@ -534,7 +562,7 @@
           <div class="testimonial-item">
             <img src="assets/img/testimonials/testimonials-3.png" class="testimonial-img" alt="Jena Karlis">
             <h3>Jena Karlis</h3>
-            <h4>Store Owner</h4>
+         
             <div class="stars">
               <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
             </div>
@@ -551,7 +579,7 @@
           <div class="testimonial-item">
             <img src="assets/img/testimonials/testimonials-4.png" class="testimonial-img" alt="Matt Brandon">
             <h3>Matt Brandon</h3>
-            <h4>Freelancer</h4>
+           
             <div class="stars">
               <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
             </div>

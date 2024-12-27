@@ -100,7 +100,7 @@
         <div class="team-member d-flex align-items-start">
           <div class="pic"><img src="assets/img/team/team-2.png" class="img-fluid" alt="Curriculum Specialist Image"></div>
           <div class="member-info">
-            <h4>Jane Smith</h4>
+            <h4>Shaharzad Ashraff</h4>
             <span>Co Founder</span>
             <p>Dedicated to creating individualized learning pathways and enhancing student engagement.</p>
             <div class="social">

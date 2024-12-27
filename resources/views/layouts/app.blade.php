@@ -26,10 +26,29 @@
 
     <!-- Main CSS File -->
     <link href="{{ asset('assets/css/main.css') }}" rel="stylesheet">
+
+
+
+
+
+
 </head>
 
 
 <body class="index-page">
+
+<style>
+.sitename {
+    font-family: 'Arial Black', 'Impact', sans-serif; /* Thicker web-safe fonts */
+    font-weight: bold; /* Extra boldness */
+    font-style: italic; /* Add italic style */
+    color: #d57176; /* Theme color */
+    text-align: center; /* Center-align if needed */
+}
+</style>
+
+
+
 
   <!-- Header -->
   @include('partials.header')

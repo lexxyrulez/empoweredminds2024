@@ -45,11 +45,11 @@
     <div class="col-lg-2 col-md-3 footer-links">
       <h4>EmpoweredMinds Services</h4>
       <ul>
-        <li><i class="bi bi-chevron-right"></i> <a href="#">Individualized Homeschooling</a></li>
-        <li><i class="bi bi-chevron-right"></i> <a href="#">Inclusive Learning</a></li>
+        <li><i class="bi bi-chevron-right"></i> <a href="#">Inclusive Individualized Homeschooling</a></li>
+       
         <li><i class="bi bi-chevron-right"></i> <a href="#">Early Childhood Education</a></li>
         <li><i class="bi bi-chevron-right"></i> <a href="#">Exam Preparation</a></li>
-        <li><i class="bi bi-chevron-right"></i> <a href="#">Special Needs Education</a></li>
+        
       </ul>
     </div>
     <div class="col-lg-2 col-md-3 footer-links">
