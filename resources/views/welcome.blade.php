@@ -62,6 +62,12 @@
 
         </section>
 
+        <section id="about" class="about section">
+        <img src="assets/img/kids.jpg" alt="" srcset="">
+           
+
+        </section>
+
         <section id="portfolio" class="portfolio section">
             <div class="container section-title" data-aos="fade-up">
                 <h2>News and Events</h2>
