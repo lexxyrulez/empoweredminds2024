@@ -11,6 +11,10 @@
   <h2></h2>
     <div class="row gy-4">
       <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
+      
+
+
+
         <h1>Empowering Minds, Building Futures</h1>
         <p>Unlock your child's potential with inclusive, innovative, and personalized education tailored to every learner.</p>
         <div class="d-flex">
@@ -95,11 +99,15 @@
   <div class="d-flex flex-column justify-content-center w-100">
     <div class="content px-3 px-lg-5" data-aos="fade-up" data-aos-delay="100">
         <h3>
-            <span>Unlocking Potential Through </span>
-            <strong>Guidance, Innovation, and Empowerment</strong>
+            <span>Welcome to </span>
+            <strong>Empowered Minds Learning Center!</strong>
         </h3>
         <p>
-            At Empowered Minds, we believe in the transformative power of education and self-awareness. By connecting individuals to their unique strengths, we inspire a journey of continuous growth and achievement.
+        We’re delighted to have you here! At Empowered Minds, we celebrate the unique potential of every child. Our dedicated team provides personalized, high-quality education tailored to individual needs in a nurturing environment.
+
+We empower students to build resilience and confidence on their educational journey through our homeschool programs, after-school tutoring, and specialized support services.
+
+Welcome to our community, where we inspire and support every learner to reach their fullest potential!
         </p>
     </div>
 </div>
@@ -167,21 +175,19 @@
 </section--><!-- /Why Us Section -->
 
 <!-- Skills Section -->
-<section id="skills" class="skills section">
+<section >
 
   <div class="container" data-aos="fade-up" data-aos-delay="100">
 
     <div class="row">
 
-      <div class="col-lg-6 d-flex align-items-center">
-        <img src="assets/img/hero-img.png" class="img-fluid" alt="">
-      </div>
+    
 
-      <div class="col-lg-6 pt-4 pt-lg-0 content">
-
-      <img src="assets/img/hero-img2.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
       
-        </div>
+
+      <img src="assets/img/kids.jpg" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
+      
+       
       
       </div>
       

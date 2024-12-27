@@ -26,6 +26,7 @@
                         <li><a href="">Language Sessions</a></li>
                     </ul>
                 </li-->
+                <li><a href="#">News & Events</a></li>
                 <li><a href="{{ route('contact') }}">Contact Us</a></li>
             </ul>
             <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
