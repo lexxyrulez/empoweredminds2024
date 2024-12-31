@@ -29,4 +29,18 @@ class PageController extends Controller
     {
         return view('contact'); // Points to resources/views/contact.blade.php
     }
+
+    public function news()
+    {
+        return view('newsandevents'); // Points to resources/views/contact.blade.php
+    }
+
+
+    public function newsdetails()
+    {
+        return view('news-details'); // Points to resources/views/contact.blade.php
+    }
+
+
+    
 }

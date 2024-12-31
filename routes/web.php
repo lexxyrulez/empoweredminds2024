@@ -29,3 +29,10 @@ Route::get('/services', [PageController::class, 'services'])->name('services');
 
 // Route for the Contact Us page
 Route::get('/contact', [PageController::class, 'contact'])->name('contact');
+
+// Route for the all news page
+Route::get('/newsandevents', [PageController::class, 'news'])->name('newsandevents');
+
+// Route for the all news page
+Route::get('/news-details', [PageController::class, 'newsdetails'])->name('news-details');
+

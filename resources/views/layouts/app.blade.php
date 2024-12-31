@@ -31,6 +31,13 @@
     <!-- Main CSS File -->
     <link href="{{ asset('assets/css/main.css') }}" rel="stylesheet">
 
+    <!-- Glightbox CSS -->
+<link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
+
+<!-- Glightbox JS -->
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+
 
 
 
@@ -92,6 +99,14 @@
 
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const lightbox = GLightbox({
+            selector: '.glightbox', // Targets elements with this class
+        });
+    });
+</script>
+
 
 </body>
 

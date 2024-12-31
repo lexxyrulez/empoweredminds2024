@@ -58,12 +58,72 @@
 
 <!-- /About Section -->
 
+<section id="our-team" class="team section" style="position: relative; background: url('assets/img/teachers.jpeg') no-repeat center center fixed; background-size: cover; padding: 50px 0;">
+    <!-- Overlay -->
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5);"></div>
+
+    <div class="container text-center" data-aos="fade-up" style="position: relative; z-index: 2;">
+        <h2 style="color: #fff;">Our Attributes</h2>
+        <p style="color: #ddd;">Our team is composed of dedicated professionals who bring a wealth of expertise and passion to their roles, ensuring every child receives the support they need to thrive.</p>
+    </div>
+
+    <div class="container" style="position: relative; z-index: 2;">
+        <div class="row gy-4">
+            <!-- Professional & Experienced Teachers -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="team-attribute p-4 text-center rounded" style="background: rgba(255, 255, 255, 0.9); height: 250px; display: flex; flex-direction: column; justify-content: center;">
+                    <h4>Professional & Experienced Teachers</h4>
+                    <p>Certified and practical experience in individualized learning, homeschooling, and after-school tutoring.</p>
+                </div>
+            </div>
+
+            <!-- Experienced Educators -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="team-attribute p-4 text-center rounded" style="background: rgba(255, 255, 255, 0.9); height: 250px; display: flex; flex-direction: column; justify-content: center;">
+                    <h4>Experienced Educators</h4>
+                    <p>Over 10 years in inclusive education, supporting learners with mainstream and special needs.</p>
+                </div>
+            </div>
+
+            <!-- Technological Proficiency -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="team-attribute p-4 text-center rounded" style="background: rgba(255, 255, 255, 0.9); height: 250px; display: flex; flex-direction: column; justify-content: center;">
+                    <h4>Technological Proficiency</h4>
+                    <p>Skilled in diverse teaching methods and technology to support different learning styles.</p>
+                </div>
+            </div>
+
+            <!-- Flexibility and Innovation -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="team-attribute p-4 text-center rounded" style="background: rgba(255, 255, 255, 0.9); height: 250px; display: flex; flex-direction: column; justify-content: center;">
+                    <h4>Flexibility and Innovation</h4>
+                    <p>Adaptable and innovative, tailoring approaches to meet individual child needs.</p>
+                </div>
+            </div>
+
+            <!-- International Curriculum Experience -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                <div class="team-attribute p-4 text-center rounded" style="background: rgba(255, 255, 255, 0.9); height: 250px; display: flex; flex-direction: column; justify-content: center;">
+                    <h4>International Curriculum Experience</h4>
+                    <p>Experience with international curricula, especially in Dar es Salaam schools.</p>
+                </div>
+            </div>
+
+            <!-- Child Protection & Special Needs Training -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                <div class="team-attribute p-4 text-center rounded" style="background: rgba(255, 255, 255, 0.9); height: 250px; display: flex; flex-direction: column; justify-content: center;">
+                    <h4>Child Protection & Special Needs Training</h4>
+                    <p>Trained staff in child protection policies and special needs education for effective support.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 
 
-<!-- Portfolio Section -->
-<!-- /Portfolio Section -->
+
 <!-- Team Section -->
 <section id="team" class="team section">
 
