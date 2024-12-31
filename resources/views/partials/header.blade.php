@@ -22,7 +22,7 @@
             <ul style="margin-right: 60px"  class="navbar-nav sm-icons">
                 <li><a class="nav-link" href="https://www.facebook.com/"><i style="color: white" class="bi bi-facebook"></i></a></li>
                 <li><a class="nav-link" href="https://www.instagram.com/"><i style="color: white" class="bi bi-instagram"></i></a></li>
-                <li><a class="nav-link" href="https://x.com/"><i style="color: white" class="bi bi-twitter"></i></a></li>
+                <li><a class="nav-link" href="https://x.com/"><i style="color: white" class="bi bi-twitter-x"></i></a></li>
                 <li><a class="nav-link" href="https://www.linkedin.com/"><i style="color: white" class="bi bi-linkedin"></i></a></li>
             </ul>
         </div>
