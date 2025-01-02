@@ -32,19 +32,11 @@
     <link href="{{ asset('assets/css/main.css') }}" rel="stylesheet">
 
     <!-- Glightbox CSS -->
-<link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
 
-<!-- Glightbox JS -->
-<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
-
-
-
-
-
-
-
+    <!-- Glightbox JS -->
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 </head>
-
 
 <body class="index-page">
 
@@ -62,13 +54,8 @@
             /* Center-align if needed */
         }
     </style>
-
-
-
-
     <!-- Header -->
     @include('partials.header')
-
 
     <!-- Main Content -->
     <main>
@@ -77,8 +64,6 @@
 
     <!-- Footer -->
     @include('partials.footer')
-
-
 
     <!-- Scroll Top -->
     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
@@ -100,12 +85,12 @@
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
     <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const lightbox = GLightbox({
-            selector: '.glightbox', // Targets elements with this class
+        document.addEventListener("DOMContentLoaded", function() {
+            const lightbox = GLightbox({
+                selector: '.glightbox', // Targets elements with this class
+            });
         });
-    });
-</script>
+    </script>
 
 
 </body>

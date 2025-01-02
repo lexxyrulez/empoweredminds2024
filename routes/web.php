@@ -36,3 +36,7 @@ Route::get('/newsandevents', [PageController::class, 'news'])->name('newsandeven
 // Route for the all news page
 Route::get('/news-details', [PageController::class, 'newsdetails'])->name('news-details');
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
