@@ -33,13 +33,14 @@
 <!-- About Section -->
 <section id="about" class="about section">
   <div class="container section-title" data-aos="fade-up">
-  <div class=" hero-img" data-aos="zoom-out" data-aos-delay="200">
-  <h2>About Us</h2>
-      </div>
-  
+    <div class="hero-img" data-aos="zoom-out" data-aos-delay="200">
+      <h2>About Us</h2>
+    </div>
   </div>
+
   <div class="container">
     <div class="row gy-4">
+      <!-- Left Column -->
       <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
         <p>At Empowered Minds Learning Center, we believe in nurturing every learner's unique potential through inclusive and personalized education. Our programs are designed to foster independence, creativity, and academic excellence.</p>
         <ul>
@@ -48,9 +49,18 @@
           <li><i class="bi bi-check2-circle"></i> <span>Inclusive and modern teaching methods with flexible options.</span></li>
         </ul>
       </div>
+
+      <!-- Right Column -->
       <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
         <p>Empowered Minds is more than an educational center; it's a partner in creating exceptional futures for learners of all backgrounds. From early childhood to advanced studies, we provide a supportive and innovative environment that inspires growth.</p>
         <a href="#services" class="read-more"><span>Discover Our Services</span><i class="bi bi-arrow-right"></i></a>
+      </div>
+    </div>
+
+    <!-- Colored Line -->
+    <div class="row">
+      <div class="col-12 mt-4">
+        <hr style="border: 2px solid #d57176; width: 100%; margin: 0 auto;">
       </div>
     </div>
   </div>
@@ -58,7 +68,65 @@
 
 <!-- /About Section -->
 
-<section id="our-team" class="team section" style="position: relative; background: url('assets/img/teachers.jpeg') no-repeat center center fixed; background-size: cover; padding: 50px 0;">
+
+
+
+
+
+<!-- Our History -->
+<section id="our-history" class="our-history section white-background">
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Our History</h2>
+        <p>Learn about the journey and mission that define Empowered Minds Learning Center.</p>
+    </div><!-- End Section Title -->
+
+    <!-- Content Section -->
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row">
+            <!-- Left Column: History -->
+            <div class="col-lg-6">
+                <p>
+                    We’re delighted to have you here! At Empowered Minds, we celebrate the unique potential of every
+                    child. Our dedicated team provides personalized, high-quality education tailored to individual
+                    needs in a nurturing environment.
+                </p>
+                <p>
+                    Over the years, we have empowered students to build resilience and confidence on their
+                    educational journey through our homeschool programs, after-school tutoring, and specialized
+                    support services.
+                </p>
+                <p>
+                    Welcome to our community, where we inspire and support every learner to reach their fullest
+                    potential!
+                </p>
+            </div>
+
+            <!-- Right Column: Image -->
+            <div class="col-lg-6 text-center">
+                <img src="assets/img/kids.png" alt="Our History Image" class="img-fluid rounded" style="margin-bottom: 0;">
+            </div>
+        </div>
+    </div><!-- End Content Section -->
+
+    <!-- Colored Divider -->
+    <div style="background-color: #d57176; height: 50px; width: 100%;"></div>
+</section>
+<!-- /Our History -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="our-team" class="team section" style="position: relative; background: url('assets/img/teachers.jpg') no-repeat center center fixed; background-size: cover; padding: 50px 0;">
     <!-- Overlay -->
     <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5);"></div>
 
