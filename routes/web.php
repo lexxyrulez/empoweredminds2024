@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\ContactController;
+use App\Mail\ContactMessageMail;
 
 
 /*
@@ -40,3 +42,6 @@ Route::get('/news-details', [PageController::class, 'newsdetails'])->name('news-
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::post('/contact', [ContactController::class, 'send'])->name('contact.send');
+

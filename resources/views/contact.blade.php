@@ -3,6 +3,12 @@
 @section('title', 'Contact - Empowered Minds Learning Center')
 
 @section('content')
+@if (session('success'))
+    <div class="alert alert-success">
+        {{ session('success') }}
+    </div>
+@endif
+
 
 <section id="call-to-action" class="call-to-action section dark-background" style="background-image: url('assets/img/pencil.jpg'); background-size: cover; background-position: center;">
 
@@ -73,41 +79,37 @@
         </div>
       </div>
 
-      <div class="col-lg-7">
-        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-          <div class="row gy-4">
+ <div class="col-lg-7">
+  <form action="{{ route('contact.send') }}" method="POST" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+    @csrf
+    <div class="row gy-4">
+        <div class="col-md-6">
+            <label for="name-field" class="pb-2">Your Name</label>
+            <input type="text" name="name" id="name-field" class="form-control" required>
+        </div>
 
-            <div class="col-md-6">
-              <label for="name-field" class="pb-2">Your Name</label>
-              <input type="text" name="name" id="name-field" class="form-control" required="">
-            </div>
+        <div class="col-md-6">
+            <label for="email-field" class="pb-2">Your Email</label>
+            <input type="email" class="form-control" name="email" id="email-field" required>
+        </div>
 
-            <div class="col-md-6">
-              <label for="email-field" class="pb-2">Your Email</label>
-              <input type="email" class="form-control" name="email" id="email-field" required="">
-            </div>
+        <div class="col-md-12">
+            <label for="subject-field" class="pb-2">Subject</label>
+            <input type="text" class="form-control" name="subject" id="subject-field" required>
+        </div>
 
-            <div class="col-md-12">
-              <label for="subject-field" class="pb-2">Subject</label>
-              <input type="text" class="form-control" name="subject" id="subject-field" required="">
-            </div>
+        <div class="col-md-12">
+            <label for="message-field" class="pb-2">Message</label>
+            <textarea class="form-control" name="message" rows="10" id="message-field" required></textarea>
+        </div>
 
-            <div class="col-md-12">
-              <label for="message-field" class="pb-2">Message</label>
-              <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
-            </div>
+        <div class="col-md-12 text-center">
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </div>
+    </div>
+</form>
 
-            <div class="col-md-12 text-center">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
-
-              <button type="submit">Send Message</button>
-            </div>
-
-          </div>
-        </form>
-      </div><!-- End Contact Form -->
+</div><!-- End Contact Form -->
 
     </div>
 
@@ -116,26 +118,32 @@
 </section>
 
 <!-- Call To Action Section -->
-<section id="call-to-action" class="call-to-action section dark-background" style="background-image: url('assets/img/cta-bg.gif'); background-size: cover; background-position: center;">
+     <!-- Call To Action Section -->
+     <section id="call-to-action" class="call-to-action section dark-background"
+    style="background-image: url('assets/img/cta-bg.gif'); background-size: cover; background-position: center;">
 
-<div class="container">
-<div class="row align-items-center" data-aos="zoom-in" data-aos-delay="100">
+    <div class="container">
+        <div class="row align-items-center" data-aos="zoom-in" data-aos-delay="100">
 
-  <!-- Text Content -->
-  <div class="col-xl-9 text-center text-xl-start">
-    <h3>Call To Action</h3>
-    <p>
-      "Join us to unlock your potential and embrace a journey of lifelong learning. We provide tailored programs designed to inspire, educate, and empower individuals to achieve their goals."
-    </p>
-  </div>
+            <!-- Text Content -->
+            <div class="col-xl-9 text-center text-xl-start">
+                <h3 style="color: #d57176;">Call To Action</h3>
+                <p style="background-color: #d57176; padding: 15px; border-radius: 5px; font-size: 16px; color:white;">
+                    "Join us to unlock your potential and embrace a journey of lifelong learning. We provide tailored
+                    programs designed to inspire, educate, and empower individuals to achieve their goals."
+                </p>
+            </div>
 
-  <!-- Call to Action Button -->
-  <div class="col-xl-3 cta-btn-container text-center">
-    <a class="cta-btn align-middle btn btn-primary" href="#">Enroll Now</a>
-  </div>
+            <!-- Call to Action Button -->
+            <div class="col-xl-3 cta-btn-container text-center">
+                <a class="cta-btn align-middle btn btn-primary" href="#"
+                    style="background-color: #d57176; color: white; padding: 12px 25px; border-radius: 25px; font-size: 16px; text-decoration: none; font-weight: bold;">
+                    Enroll Now
+                </a>
+            </div>
 
-</div>
-</div>
+        </div>
+    </div>
 
 </section>
 

@@ -482,31 +482,35 @@
 
         <!-- /Testimonials Section -->
 
-        <!-- Call To Action Section -->
-        <section id="call-to-action" class="call-to-action section dark-background"
-            style="background-image: url('assets/img/cta-bg.gif'); background-size: cover; background-position: center;">
+     <!-- Call To Action Section -->
+<section id="call-to-action" class="call-to-action section dark-background"
+    style="background-image: url('assets/img/cta-bg.gif'); background-size: cover; background-position: center;">
 
-            <div class="container">
-                <div class="row align-items-center" data-aos="zoom-in" data-aos-delay="100">
+    <div class="container">
+        <div class="row align-items-center" data-aos="zoom-in" data-aos-delay="100">
 
-                    <!-- Text Content -->
-                    <div class="col-xl-9 text-center text-xl-start">
-                        <h3>Call To Action</h3>
-                        <p>
-                            "Join us to unlock your potential and embrace a journey of lifelong learning. We provide
-                            tailored programs designed to inspire, educate, and empower individuals to achieve their goals."
-                        </p>
-                    </div>
-
-                    <!-- Call to Action Button -->
-                    <div class="col-xl-3 cta-btn-container text-center">
-                        <a class="cta-btn align-middle btn btn-primary" href="#">Enroll Now</a>
-                    </div>
-
-                </div>
+            <!-- Text Content -->
+            <div class="col-xl-9 text-center text-xl-start">
+                <h3 style="color: #d57176;">Call To Action</h3>
+                <p style="background-color: #d57176; padding: 15px; border-radius: 5px; font-size: 16px; color:white;">
+                    "Join us to unlock your potential and embrace a journey of lifelong learning. We provide tailored
+                    programs designed to inspire, educate, and empower individuals to achieve their goals."
+                </p>
             </div>
 
-        </section>
+            <!-- Call to Action Button -->
+            <div class="col-xl-3 cta-btn-container text-center">
+                <a class="cta-btn align-middle btn btn-primary" href="#"
+                    style="background-color: #d57176; color: white; padding: 12px 25px; border-radius: 25px; font-size: 16px; text-decoration: none; font-weight: bold;">
+                    Enroll Now
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
 
 
     </main>
