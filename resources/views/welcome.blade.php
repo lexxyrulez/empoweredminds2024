@@ -18,10 +18,10 @@
                             every learner.</p>
                         <div class="d-flex">
                             <a href="{{ route('about') }}" class="btn-get-started">Learn More</a>
-                            <a href="https://www.youtube.com/shorts/jNQAARx2jEs" 
-   class="glightbox btn-watch-video d-flex align-items-center">
-    <i class="bi bi-play-circle"></i><span>Watch Our Story</span>
-</a>
+                            <a href="https://www.youtube.com/shorts/jNQAARx2jEs"
+                                class="glightbox btn-watch-video d-flex align-items-center">
+                                <i class="bi bi-play-circle"></i><span>Watch Our Story</span>
+                            </a>
 
                         </div>
                     </div>
@@ -63,49 +63,56 @@
 
 
 
-<!-- About Section -->
-<section id="about" class="about section">
-  <div class="container section-title" data-aos="fade-up">
-  <div class=" hero-img" data-aos="zoom-out" data-aos-delay="200">
-  <h2>Mission & Vision</h2>
-      </div>
-  
-  </div>
-  <div class="container">
-    <div class="row gy-4">
-      <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
-      <h2>Our Mission</h2>
-        <p> Our mission is to create a nurturing environment for children
- who face challenges in traditional schools by offering
- individualized learning programs tailored to diverse needs. We
- address the lack of specialized support and inclusive
- frameworks, providing one-on-one attention for academic
- success, while also accommodating unique curricula for families
- with dynamic lifestyles.
-</p>
-        
-      </div>
-      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-      <h2>Our Vision</h2>
-        <p>To be a leading educational center where every child is empowered to thrive and excel, regardless of their unique challenges. We aim to redefine learning by fostering a culture of inclusivity, innovation, and lifelong growth, inspiring confidence and success in every learner.</p>
-        <a href="#services" class="read-more"><span>Download Our Outline</span><i class="bi bi-arrow-right"></i></a>
-      </div>
-    </div>
-  </div>
-</section>
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <div class="container section-title" data-aos="fade-up">
+                <div class=" hero-img" data-aos="zoom-out" data-aos-delay="200">
+                    <h2>Mission & Vision</h2>
+                </div>
 
-<!-- /About Section -->
+            </div>
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+                        <h2>Our Mission</h2>
+                        <p> Our mission is to create a nurturing environment for children
+                            who face challenges in traditional schools by offering
+                            individualized learning programs tailored to diverse needs. We
+                            address the lack of specialized support and inclusive
+                            frameworks, providing one-on-one attention for academic
+                            success, while also accommodating unique curricula for families
+                            with dynamic lifestyles.
+                        </p>
 
-<section id="portfolio" class="portfolio section" style="position: relative; background-image: url('assets/img/kids.jpg'); background-size: cover; background-position: center; background-attachment: fixed; height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center;">
-    <!-- Overlay for better text visibility -->
-    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6);"></div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                        <h2>Our Vision</h2>
+                        <p>To be a leading educational center where every child is empowered to thrive and excel, regardless
+                            of their unique challenges. We aim to redefine learning by fostering a culture of inclusivity,
+                            innovation, and lifelong growth, inspiring confidence and success in every learner.</p>
+                        <a href="#services" class="read-more"><span>Download Our Outline</span><i
+                                class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Content over the background -->
-    <div style="position: relative; color: white; z-index: 1; max-width: 600px; padding: 20px;">
-        <h2 style="font-size: 36px; margin-bottom: 15px; font-weight: bold;">Empowering Young Minds</h2>
-        <p style="font-size: 18px; margin: 0; line-height: 1.6;">Creating a brighter future through personalized education and fostering inclusivity for every learner.</p>
-    </div>
-</section>
+        <!-- /About Section -->
+
+        <section id="portfolio" class="portfolio section"
+            style="position: relative; background-image: url('assets/img/kids.jpg'); background-size: cover; background-position: center; background-attachment: fixed; height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center;">
+            <!-- Overlay for better text visibility -->
+            <div
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6);">
+            </div>
+
+            <!-- Content over the background -->
+            <div style="position: relative; color: white; z-index: 1; max-width: 600px; padding: 20px;">
+                <h2 style="font-size: 36px; margin-bottom: 15px; font-weight: bold;">Empowering Young Minds</h2>
+                <p style="font-size: 18px; margin: 0; line-height: 1.6;">Creating a brighter future through personalized
+                    education and fostering inclusivity for every learner.</p>
+            </div>
+        </section>
 
 
 
@@ -113,7 +120,7 @@
 
 
 
-      
+
 
         <section id="portfolio" class="portfolio section">
             <div class="container section-title" data-aos="fade-up">
@@ -134,23 +141,20 @@
 
                     <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
                         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-homeschooling">
-                            <img src="assets/img/logo.png" class="img-fluid"
-                                alt="Homeschooling">
+                            <img src="assets/img/logo.png" class="img-fluid" alt="Homeschooling">
                             <div class="portfolio-info">
                                 <h4>Rebranding</h4>
                                 <p>Join us as we celebrate a decade of transforming education and empowering young minds.
                                 </p>
-                                <a href="#" title="Homeschooling"
-                                    data-gallery="portfolio-gallery-homeschooling" class="glightbox preview-link"><i
-                                        class="bi bi-zoom-in"></i></a>
+                                <a href="#" title="Homeschooling" data-gallery="portfolio-gallery-homeschooling"
+                                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                                 <a href="homeschooling-details.html" title="More Details" class="details-link"><i
                                         class="bi bi-link-45deg"></i></a>
                             </div>
                         </div>
 
                         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-inclusive">
-                            <img src="assets/img/logo.png" class="img-fluid"
-                                alt="Inclusive Learning">
+                            <img src="assets/img/logo.png" class="img-fluid" alt="Inclusive Learning">
                             <div class="portfolio-info">
                                 <h4>Launching</h4>
                                 <p>Top Award for Inclusive Education</p>
