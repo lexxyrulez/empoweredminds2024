@@ -31,16 +31,16 @@
 <header style="margin-top: 50px" id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
         <!-- Logo -->
-        <a href="{{ route('home') }}" class="logo d-flex align-items-center me-auto">
+        <a href="/" class="logo d-flex align-items-center me-auto">
             <!-- Uncomment the line below if you also wish to use an image logo -->
             <!-- <img src="{{ asset('assets/img/logo.png') }}" alt="Empowered Minds Logo"> -->
-            <h1 class="sitename">EMPOWERED MINDS</h1>
+            <h3 style="font-family: 'Gagalin', sans-serif; color:#d57176">EMPOWERED MINDS</h3>
         </a>
 
         <!-- Navigation -->
         <nav id="navmenu" class="navmenu">
             <ul>
-                <li><a href="{{ route('home') }}" class="active">Home</a></li>
+                <li><a href="/" class="active">Home</a></li>
                 <li><a href="{{ route('about') }}">About Us</a></li>
                 <li><a href="{{ route('services') }}">Our Services</a></li>
                 <li><a href="{{ route('newsandevents') }}">News & Events</a></li>
