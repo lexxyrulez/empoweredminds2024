@@ -80,7 +80,7 @@
       </div>
 
  <div class="col-lg-7">
-  <form action="{{ route('contact.send') }}" method="POST" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+ <form action="{{ route('contact.send') }}" method="POST" data-aos="fade-up" data-aos-delay="200">
     @csrf
     <div class="row gy-4">
         <div class="col-md-6">
@@ -103,11 +103,19 @@
             <textarea class="form-control" name="message" rows="10" id="message-field" required></textarea>
         </div>
 
-        <div class="col-md-12 text-center">
-            <button type="submit" class="btn btn-primary">Send Message</button>
-        </div>
+        
+        <button type="submit" class="btn btn-primary" 
+        style="background-color: #d57176; color: #fff; border: 2px solid #d57176; border-radius: 4px;">
+    Send Message
+</button>
+
+
+
+      
     </div>
 </form>
+
+
 
 </div><!-- End Contact Form -->
 
