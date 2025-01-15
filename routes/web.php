@@ -39,6 +39,9 @@ Route::get('/newsandevents', [PageController::class, 'news'])->name('newsandeven
 Route::get('/news-details', [PageController::class, 'newsdetails'])->name('news-details');
 
 
+// Route for the all news page
+Route::get('/enroll', [PageController::class, 'enroll'])->name('enroll');
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

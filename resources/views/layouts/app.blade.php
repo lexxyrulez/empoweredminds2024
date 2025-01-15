@@ -55,6 +55,10 @@
             /* Center-align if needed */
         }
     </style>
+
+
+
+
     <!-- Header -->
     @include('partials.header')
 
@@ -91,6 +95,34 @@
                 selector: '.glightbox', // Targets elements with this class
             });
         });
+    </script>
+
+    <script>
+
+document.querySelectorAll('.next-step').forEach(button => {
+    button.addEventListener('click', () => {
+        const currentStep = button.closest('.form-step');
+        const nextStep = currentStep.nextElementSibling;
+        if (nextStep) {
+            currentStep.style.display = 'none';
+            nextStep.style.display = 'block';
+        }
+    });
+});
+
+document.querySelectorAll('.previous-step').forEach(button => {
+    button.addEventListener('click', () => {
+        const currentStep = button.closest('.form-step');
+        const previousStep = currentStep.previousElementSibling;
+        if (previousStep) {
+            currentStep.style.display = 'none';
+            previousStep.style.display = 'block';
+        }
+    });
+});
+
+
+
     </script>
 
 

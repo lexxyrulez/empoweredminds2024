@@ -41,6 +41,12 @@ class PageController extends Controller
         return view('news-details'); // Points to resources/views/contact.blade.php
     }
 
+    
+    public function enroll()
+    {
+        return view('enroll'); // Points to resources/views/contact.blade.php
+    }
+
 
     
 }

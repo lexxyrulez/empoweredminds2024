@@ -11,7 +11,7 @@
                     <p>Block 41</p>
                     <p>Kinondoni, Dar Es Salaam</p>
                     <p class="mt-3"><strong>Phone:</strong> <span> +255742177051</span></p>
-                    <p><strong>Email:</strong> <span>info@empoweredmindslearning.co.tz</span></p>
+                    <p><strong>Email:</strong> <span> info@empoweredmindslearning.co.tz</span></p>
                 </div>
             </div>
 

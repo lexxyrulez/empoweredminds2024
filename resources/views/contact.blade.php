@@ -28,10 +28,6 @@
 </section>
 
 
-
-
-
-
 <!-- /Call To Action Section -->
 
 <!-- Contact Section -->
@@ -96,6 +92,11 @@
         <div class="col-md-12">
             <label for="subject-field" class="pb-2">Subject</label>
             <input type="text" class="form-control" name="subject" id="subject-field" required>
+        </div>
+
+        <div class="col-md-12">
+            <label for="subject-field" class="pb-2">Phone</label>
+            <input type="text" class="form-control" name="phone" id="subject-field" required>
         </div>
 
         <div class="col-md-12">
