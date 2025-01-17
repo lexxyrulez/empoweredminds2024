@@ -69,10 +69,11 @@
               <p>info@empoweredmindslearning.co.tz</p>
             </div>
           </div><!-- End Info Item -->
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.076822083297!2d39.27057227475557!3d-6.760487093236183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185c4d561ada95c3%3A0x5a5b8d881e3d6084!2sNyumbani%20Tutors%20Office!5e0!3m2!1sen!2stz!4v1733811729879!5m2!1sen!2stz" width="100%" height="270px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
+          
+            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3961.901759697395!2d39.265393874995375!3d-6.781809393215205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwNDYnNTQuNSJTIDM5wrAxNicwNC43IkU!5e0!3m2!1sen!2stz!4v1737105961537!5m2!1sen!2stz" width="100%" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           <!--iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe-->
         </div>
+        <a class="btn-getstarted" href="https://maps.app.goo.gl/1BWkhL3TkKwyuFrL9" style="background-color: #d57176; color: white; padding: 8px 16px; border-radius: 4px; text-decoration: none;">Follow The map</a>
       </div>
 
  <div class="col-lg-7">

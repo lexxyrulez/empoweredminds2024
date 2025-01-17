@@ -76,7 +76,7 @@
                 <li><a href="/" class="active">Home</a></li>
                 <li><a href="{{ route('about') }}">About Us</a></li>
                 <li><a href="{{ route('services') }}">Our Services</a></li>
-                <li><a href="{{ route('newsandevents') }}">News & Events</a></li>
+                <!--li><a href="{{ route('newsandevents') }}">News & Events</a></li-->
                 <li><a href="{{ route('contact') }}">Contact Us</a></li>
             </ul>
             <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>

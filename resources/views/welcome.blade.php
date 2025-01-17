@@ -122,7 +122,7 @@
 
 
 
-        <section id="portfolio" class="portfolio section">
+        <!--section id="portfolio" class="portfolio section">
             <div class="container section-title" data-aos="fade-up">
                 <h2>News and Events</h2>
                 <p>Stay updated with the latest news and happenings at Empowered Minds.</p>
@@ -504,7 +504,7 @@
 
             <!-- Call to Action Button -->
             <div class="col-xl-3 cta-btn-container text-center">
-                <a class="cta-btn align-middle btn btn-primary" href="#"
+                <a class="cta-btn align-middle btn btn-primary" href="{{ route('enroll') }}"
                     style="background-color: #d57176; color: white; padding: 12px 25px; border-radius: 25px; font-size: 16px; text-decoration: none; font-weight: bold;">
                     Enroll Now
                 </a>
