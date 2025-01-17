@@ -49,5 +49,6 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/admin/enrollments', [App\Http\Controllers\AdminController::class, 'indexEnrollment'])->name('admin.enrollment.index');
 Route::get('/admin/enrollments/view/{id}', [App\Http\Controllers\AdminController::class, 'viewEnrollment'])->name('admin.enrollment.view');
+Route::get('/admin/enrollments/download/{id}',[App\Http\Controllers\AdminController::class, 'downloadEnrollment'])->name('admin.enrollment.download');
 
 Route::post('/contact/send', [ContactController::class, 'send'])->name('contact.send');
