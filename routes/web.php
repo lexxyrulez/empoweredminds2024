@@ -41,9 +41,13 @@ Route::get('/news-details', [PageController::class, 'newsdetails'])->name('news-
 
 // Route for the all news page
 Route::get('/enroll', [PageController::class, 'enroll'])->name('enroll');
+Route::post('/enroll/submit', [PageController::class, 'enrollSubmit'])->name('enroll.submit');
 
 Auth::routes();
 
+//admin routes
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/admin/enrollments', [App\Http\Controllers\AdminController::class, 'indexEnrollment'])->name('admin.enrollment.index');
+Route::get('/admin/enrollments/view/{id}', [App\Http\Controllers\AdminController::class, 'viewEnrollment'])->name('admin.enrollment.view');
 
 Route::post('/contact/send', [ContactController::class, 'send'])->name('contact.send');
