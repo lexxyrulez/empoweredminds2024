@@ -148,37 +148,37 @@
                         <h3>Student Details</h3>
                         <div class="mb-3">
                             <label for="student-email" class="form-label">Email</label>
-                            <input type="email" name="student_email" id="student-email" class="form-control" required>
+                            <input type="email" name="student_email" id="student-email" class="form-control" >
                         </div>
                         <div class="mb-3">
                             <label for="student-fullname" class="form-label">Student's Full Name</label>
                             <input type="text" name="student_fullname" id="student-fullname" class="form-control"
-                                required>
+                                >
                         </div>
                         <div class="mb-3">
                             <label for="dob" class="form-label">Date of Birth</label>
-                            <input type="date" name="dob" id="dob" class="form-control" required>
+                            <input type="date" name="dob" id="dob" class="form-control" >
                         </div>
                         <div class="mb-3">
                             <label for="gender" class="form-label">Gender</label>
-                            <select name="gender" id="gender" class="form-select" required>
+                            <select name="gender" id="gender" class="form-select" >
                                 <option value="male">Male</option>
                                 <option value="female">Female</option>
                             </select>
                         </div>
                         <div class="mb-3">
                             <label for="nationality" class="form-label">Nationality</label>
-                            <input type="text" name="nationality" id="nationality" class="form-control" required>
+                            <input type="text" name="nationality" id="nationality" class="form-control" >
                         </div>
                         <div class="mb-3">
                             <label for="birth-certificate" class="form-label">Upload Birth
                                 Certificate/Identification</label>
                             <input type="file" name="birth_certificate" id="birth-certificate" class="form-control"
-                                required>
+                                >
                         </div>
                         <div class="mb-3">
                             <label for="grade" class="form-label">Grade/Level Applying For</label>
-                            <select name="grade" id="grade" class="form-select" required>
+                            <select name="grade" id="grade" class="form-select" >
                                 <option value="" disabled selected>Select Grade</option>
                                 <option value="pre-school-kindergarten">Pre-School Kindergarten</option>
                                 <option value="1">Grade 1</option>
@@ -198,13 +198,13 @@
                         </div>
                         <div class="mb-3">
                             <label for="start-date" class="form-label">Preferred Start Date</label>
-                            <input type="date" name="start_date" id="start-date" class="form-control" required>
+                            <input type="date" name="start_date" id="start-date" class="form-control" >
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Does the student have any siblings enrolled in this school?</label>
                             <div>
-                                <input type="radio" name="siblings" value="yes" required> Yes
-                                <input type="radio" name="siblings" value="no" required> No
+                                <input type="radio" name="siblings" value="yes" > Yes
+                                <input type="radio" name="siblings" value="no" > No
                             </div>
                         </div>
                         <div class="mb-3">
@@ -223,20 +223,20 @@
                         <h5>Primary Parent/Guardian</h5>
                         <div class="mb-3">
                             <label for="parent1-name" class="form-label">Full Name of Parent/Guardian</label>
-                            <input type="text" name="parent1_name" id="parent1-name" class="form-control" required>
+                            <input type="text" name="parent1_name" id="parent1-name" class="form-control" >
                         </div>
                         <div class="mb-3">
                             <label for="parent1-relationship" class="form-label">Relationship to Student</label>
                             <input type="text" name="parent1_relationship" id="parent1-relationship"
-                                class="form-control" required>
+                                class="form-control" >
                         </div>
                         <div class="mb-3">
                             <label for="parent1-phone" class="form-label">Phone Number</label>
-                            <input type="text" name="parent1_phone" id="parent1-phone" class="form-control" required>
+                            <input type="text" name="parent1_phone" id="parent1-phone" class="form-control" >
                         </div>
                         <div class="mb-3">
                             <label for="parent1-email" class="form-label">Email Address</label>
-                            <input type="email" name="parent1_email" id="parent1-email" class="form-control" required>
+                            <input type="email" name="parent1_email" id="parent1-email" class="form-control" >
                         </div>
                         <div class="mb-3">
                             <label for="parent1-occupation" class="form-label">Occupation</label>
@@ -245,7 +245,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="parent1-id" class="form-label">Upload a Copy of Your Identification Card</label>
-                            <input type="file" name="parent1_id" id="parent1-id" class="form-control" required>
+                            <input type="file" name="parent1_id" id="parent1-id" class="form-control" >
                         </div>
 
                         <!-- Parent/Guardian 2 -->
@@ -451,7 +451,7 @@
                         <div class="mb-3">
                             <label for="curriculum" class="form-label">Which curriculum would you prefer for your
                                 child?</label>
-                            <select name="curriculum" id="curriculum" class="form-select" required>
+                            <select name="curriculum" id="curriculum" class="form-select" >
                                 <option value="" disabled selected>Select Curriculum</option>
                                 <option value="Cambridge">Cambridge</option>
                                 <option value="NECTA">NECTA</option>
@@ -469,17 +469,17 @@
                         <div class="mb-3">
                             <label for="emergency-contact-name" class="form-label">Emergency Contact Name</label>
                             <input type="text" name="emergency_contact_name" id="emergency-contact-name"
-                                class="form-control" required>
+                                class="form-control" >
                         </div>
                         <div class="mb-3">
                             <label for="emergency-relationship" class="form-label">Relationship to Student</label>
                             <input type="text" name="emergency_relationship" id="emergency-relationship"
-                                class="form-control" required>
+                                class="form-control" >
                         </div>
                         <div class="mb-3">
                             <label for="emergency-phone" class="form-label">Phone Number</label>
                             <input type="text" name="emergency_phone" id="emergency-phone" class="form-control"
-                                required>
+                                >
                         </div>
 
                         <!-- Declaration -->
@@ -492,7 +492,7 @@
                         <div class="mb-3">
                             <label for="declaration-name" class="form-label">Parent/Guardian Name</label>
                             <input type="text" name="declaration_name" id="declaration-name" class="form-control"
-                                required>
+                                >
                         </div>
 
                         <!-- Form Buttons -->
