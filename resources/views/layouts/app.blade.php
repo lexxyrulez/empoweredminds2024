@@ -67,6 +67,59 @@
         @yield('content')
     </main>
 
+
+<!-- WhatsApp Chat Button -->
+<a href="https://wa.me/255742177051" target="_blank" id="whatsapp-chat" class="whatsapp-chat">
+    <i class="bi bi-whatsapp"></i>
+    <span>Chat with us</span>
+</a>
+
+<!-- Inline CSS -->
+<style>
+    /* WhatsApp Button Styles */
+    #whatsapp-chat {
+        position: fixed;
+        bottom: 120px;
+        right: 20px;
+        background-color: #25D366; /* WhatsApp green */
+        color: white;
+        border-radius: 50px;
+        padding: 10px 20px;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        text-decoration: none;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        z-index: 1000;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+        opacity: 0; /* Hidden initially */
+        visibility: hidden;
+    }
+
+    /* WhatsApp Icon */
+    #whatsapp-chat i {
+        font-size: 20px;
+    }
+
+    /* Button Visibility on Scroll */
+    #whatsapp-chat.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* Hover Effect */
+    #whatsapp-chat:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    }
+</style>
+
+
+
+
     <!-- Footer -->
     @include('partials.footer')
 
@@ -124,6 +177,19 @@ document.querySelectorAll('.previous-step').forEach(button => {
 
 
     </script>
+
+
+<script>
+    document.addEventListener("scroll", function () {
+        const whatsappButton = document.getElementById("whatsapp-chat");
+        if (window.scrollY > 100) { // Show button after 100px scroll
+            whatsappButton.classList.add("visible");
+        } else {
+            whatsappButton.classList.remove("visible");
+        }
+    });
+</script>
+
 
 
 </body>
