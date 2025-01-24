@@ -1,490 +1,257 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0 auto;
+            padding: 20px;
+            max-width: 900px;
+            color: #333;
+        }
+        .title {
+            text-align: center;
+            font-size: 26px;
+            margin-bottom: 30px;
+            color: #d57176;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #555;
+        }
+        .field-group {
+            margin-bottom: 10px;
+        }
+        .field-label {
+            font-weight: bold;
+            color: #555;
+        }
+        .field-value {
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f8f9fa;
+        }
+        .attachment-link {
+            color: #d57176;
+            text-decoration: none;
+        }
+    </style>
 </head>
-
 <body>
-    <!-- Container fluid  -->
-    <div class="container-fluid">
-        <!-- Start Page Content -->
-        <div class="row card" id="printSection">
-            <!-- Row 1: Student Information -->
-            <div class="col-lg-12">
-                <div class="card">
-                    <div class="card-title">
-                        <h4>Enrolment Form - Student Information</h4>
-                    </div>
-                    <div class="card-body">
-                        <div class="basic-form">
-                            <form>
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label>Student Email</label>
-                                            <input readonly type="email" name="student_email" class="form-control"
-                                                placeholder="Student Email" value="{{ $data->student_email ?? '' }}">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label>Student Name</label>
-                                            <input readonly type="text" name="student_name" class="form-control"
-                                                placeholder="Student Name" value="{{ $data->student_name ?? '' }}">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label>Date of Birth</label>
-                                            <input readonly type="text" name="student_dob" class="form-control"
-                                                value="{{ Carbon\Carbon::parse($data->student_dob)->format('d/m/Y') ?? '' }}">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label>Gender</label>
-                                            <input readonly type="text" name="student_gender" class="form-control"
-                                                placeholder="Student Gender" value="{{ $data->student_gender ?? '' }}">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label>Nationality</label>
-                                            <input readonly type="text" name="student_nationality"
-                                                class="form-control" placeholder="Nationality"
-                                                value="{{ $data->student_nationality ?? '' }}">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label>Attachment</label>
-                                            @if (!empty($data->student_attachment))
-                                                <p>Current File: <a
-                                                        href="{{ asset('upload/' . $data->student_attachment) }}"
-                                                        target="_blank">View</a></p>
-                                            @endif
-                                        </div>
-                                    </div>
-                                </div>
+    <div class="title">Evening Enrollment Form</div>
 
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label>Student Grade/Level</label>
-                                            <input readonly type="text" name="student_level" class="form-control"
-                                                placeholder="Student Level" value="{{ $data->student_level ?? '' }}">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label>Start Date</label>
-                                            <input readonly type="text" name="start_date" class="form-control"
-                                                value="{{ Carbon\Carbon::parse($data->start_date)->format('d/m/Y') ?? '' }}">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label>Siblings</label>
-                                            <input readonly type="text" name="siblings" class="form-control"
-                                                placeholder="Siblings" value="{{ $data->siblings ?? '' }}">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label>Siblings Names</label>
-                                            <input readonly type="text" name="siblings_names" class="form-control"
-                                                placeholder="Siblings Names" value="{{ $data->siblings_names ?? '' }}">
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Row 2: Parent/Guardian Information -->
-            <div class="col-lg-12">
-                <div class="card">
-                    <div class="card-title">
-                        <h4>Enrolment Form - Parent/Guardian Information</h4>
-                    </div>
-                    <div class="card-body">
-                        <div class="basic-form">
-                            <form>
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label>Parent 1 Name</label>
-                                            <input readonly type="text" name="parent_name" class="form-control"
-                                                placeholder="Parent Name" value="{{ $data->parent_name ?? '' }}">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label>Parent 1 Relationship</label>
-                                            <input readonly type="text" name="student_relationship"
-                                                class="form-control" placeholder="Relationship"
-                                                value="{{ $data->student_relationship ?? '' }}">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label>Parent 1 Phone Number</label>
-                                            <input readonly type="tel" name="parent_phonenumber"
-                                                class="form-control" placeholder="Phone Number"
-                                                value="{{ $data->parent_phonenumber ?? '' }}">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label>Parent 1 Email</label>
-                                            <input readonly type="email" name="parent_email" class="form-control"
-                                                placeholder="Parent Email" value="{{ $data->parent_email ?? '' }}">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label>Parent 1 Occupation</label>
-                                            <input readonly type="text" name="parent_occupation"
-                                                class="form-control" placeholder="Occupation"
-                                                value="{{ $data->parent_occupation ?? '' }}">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label>Parent 1 Attachment</label>
-                                            @if (!empty($data->parent_attachment))
-                                                <p>Current File: <a href="{{ asset($data->parent_attachment) }}"
-                                                        target="_blank">View</a></p>
-                                            @endif
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label>Parent 2 Name</label>
-                                            <input readonly type="text" name="second_parent_name"
-                                                class="form-control" placeholder="Parent Name"
-                                                value="{{ $data->second_parent_name ?? '' }}">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label>Parent 2 Relationship</label>
-                                            <input readonly type="text" name="student_second_relationship"
-                                                class="form-control" placeholder="Relationship"
-                                                value="{{ $data->student_second_relationship ?? '' }}">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label>Parent 2 Phone Number</label>
-                                            <input readonly type="tel" name="second_parent_phonenumber"
-                                                class="form-control" placeholder="Phone Number"
-                                                value="{{ $data->second_parent_phonenumber ?? '' }}">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label>Parent 2 Email</label>
-                                            <input readonly type="email" name="second_parent_email"
-                                                class="form-control" placeholder="Parent Email"
-                                                value="{{ $data->second_parent_email ?? '' }}">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label>Parent 2 Occupation</label>
-                                            <input readonly type="text" name="second_parent_occupation"
-                                                class="form-control" placeholder="Occupation"
-                                                value="{{ $data->second_parent_occupation ?? '' }}">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label>Parent 2 Attachment</label>
-                                            @if (!empty($data->second_parent_attachment))
-                                                <p>Current File: <a
-                                                        href="{{ asset($data->second_parent_attachment) }}"
-                                                        target="_blank">View</a></p>
-                                            @endif
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Row 3: School Information -->
-            <div class="col-lg-12">
-                <div class="card">
-                    <div class="card-title">
-                        <h4>Enrolment Form - Educational Background</h4>
-                    </div>
-                    <div class="card-body">
-                        <div class="basic-form">
-                            <form>
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label>Previous School</label>
-                                            <input readonly type="text" name="previous_school"
-                                                class="form-control" placeholder="Previous School"
-                                                value="{{ $data->previous_school ?? '' }}">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label>Previous School Address</label>
-                                            <input readonly type="text" name="previous_school_address"
-                                                class="form-control" placeholder="Previous School Address"
-                                                value="{{ $data->previous_school_address ?? '' }}">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label>Last Grade Completed</label>
-                                            <input readonly type="text" name="last_grade_completed"
-                                                class="form-control" placeholder="Last Grade Completed"
-                                                value="{{ $data->last_grade_completed ?? '' }}">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label>Reasons</label>
-                                            <input readonly type="text" name="reasons" class="form-control"
-                                                placeholder="Reasons" value="{{ $data->reasons ?? '' }}">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label>Parent 1 Occupation</label>
-                                            <input readonly type="text" name="parent_occupation"
-                                                class="form-control" placeholder="Occupation"
-                                                value="{{ $data->parent_occupation ?? '' }}">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label>Previous School Attachments</label>
-                                            @if (!empty($data->parent_attachment))
-                                                <p>Current File: <a
-                                                        href="{{ asset($data->previous_school_attachments) }}"
-                                                        target="_blank">View</a></p>
-                                            @endif
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="card-title">
-                                    <h4>Health and Special Needs</h4>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label>Special Needs</label>
-                                            <input readonly type="text" name="special_needs" class="form-control"
-                                                placeholder="Special Needs" value="{{ $data->special_needs ?? '' }}">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label>Special Needs Details</label>
-                                            <input readonly type="text" name="special_needs_details"
-                                                class="form-control" placeholder="Special Needs Details"
-                                                value="{{ $data->special_needs_details ?? '' }}">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label>Special Needs Attachments</label>
-                                            @if (!empty($data->special_needs_attachments))
-                                                <p>Current File: <a
-                                                        href="{{ asset($data->special_needs_attachments) }}"
-                                                        target="_blank">View</a></p>
-                                            @endif
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label>Medical Conditions</label>
-                                            <input readonly type="text" name="medical_conditions"
-                                                class="form-control" placeholder="Medical Conditions"
-                                                value="{{ $data->medical_conditions ?? '' }}">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label>Medical Conditions Details</label>
-                                            <input readonly type="text" name="medical_conditions_details"
-                                                class="form-control" placeholder="Medical Conditions Details"
-                                                value="{{ $data->medical_conditions_details ?? '' }}">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label>Medication</label>
-                                            <input readonly type="text" name="medication" class="form-control"
-                                                placeholder="Medication" value="{{ $data->medication ?? '' }}">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label>Medication Details</label>
-                                            <input readonly type="text" name="medication_details"
-                                                class="form-control" placeholder="Medication Details"
-                                                value="{{ $data->medication_details ?? '' }}">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label>Immunizations</label>
-                                            <input readonly type="text" name="immunizations" class="form-control"
-                                                placeholder="Immunizations" value="{{ $data->immunizations ?? '' }}">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label>Immunizations Details</label>
-                                            <input readonly type="text" name="immunizations_details"
-                                                class="form-control" placeholder="Immunizations Details"
-                                                value="{{ $data->immunizations_details ?? '' }}">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label>Immunizations Attachments</label>
-                                            @if (!empty($data->immunizations_attachments))
-                                                <p>Current File: <a
-                                                        href="{{ asset($data->immunizations_attachments) }}"
-                                                        target="_blank">View</a></p>
-                                            @endif
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label>Permissions For Minor Injuries</label>
-                                            <input readonly type="text" name="permissions_minor_injuries"
-                                                class="form-control" placeholder="Permissions For Minor Injuries"
-                                                value="{{ $data->permissions_minor_injuries ?? '' }}">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label>Permissions For Medical Attention</label>
-                                            <input readonly type="text" name="permissions_medical_attention"
-                                                class="form-control" placeholder="Permissions For Medical Attention"
-                                                value="{{ $data->permissions_medical_attention ?? '' }}">
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Row 4: Emergency Contact -->
-            <div class="col-lg-12">
-                <div class="card">
-                    <div class="card-title">
-                        <h4>Enrolment Form - Program Information</h4>
-                    </div>
-                    <div class="card-body">
-                        <div class="basic-form">
-                            <form>
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label>Curriculum</label>
-                                            <input readonly type="text" name="curriculum" class="form-control"
-                                                placeholder="Curriculum" value="{{ $data->curriculum ?? '' }}">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label>Curriculum Details</label>
-                                            <input readonly type="text" name="curriculum_details"
-                                                class="form-control" placeholder="Curriculum Details"
-                                                value="{{ $data->curriculum_details ?? '' }}">
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="card-body">
-                        <div class="basic-form">
-                            <form>
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label>Emergency Contact Name</label>
-                                            <input readonly type="text" name="emergency_contact"
-                                                class="form-control" placeholder="Emergency Contact"
-                                                value="{{ $data->emergency_contact ?? '' }}">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label>Relationship to Student</label>
-                                            <input readonly type="text" name="emergency_contact_relationship"
-                                                class="form-control" placeholder="Relationship"
-                                                value="{{ $data->emergency_contact_relationship ?? '' }}">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label>Phone Number</label>
-                                            <input readonly type="tel" name="emergency_contact_contact"
-                                                class="form-control" placeholder="Contact"
-                                                value="{{ $data->emergency_contact_contact ?? '' }}">
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="section">
+        <div class="section-title">Student Information</div>
+        <div class="field-group">
+            <span class="field-label">Email:</span>
+            <div class="field-value">{{ $data->student_email ?? '' }}</div>
         </div>
-
-
-
+        <div class="field-group">
+            <span class="field-label">Name:</span>
+            <div class="field-value">{{ $data->student_name ?? '' }}</div>
+        </div>
+        <div class="field-group">
+            <span class="field-label">Date of Birth:</span>
+            <div class="field-value">{{ $data->student_dob ?? '' }}</div>
+        </div>
+        <div class="field-group">
+            <span class="field-label">Gender:</span>
+            <div class="field-value">{{ $data->student_gender ?? '' }}</div>
+        </div>
+        <div class="field-group">
+            <span class="field-label">Nationality:</span>
+            <div class="field-value">{{ $data->student_nationality ?? '' }}</div>
+        </div>
+        {{-- <div class="field-group">
+            <span class="field-label">Attachment:</span>
+            <div class="field-value">
+                <a href="{{ $data->student_attachment ?? '#' }}" class="attachment-link">Download</a>
+            </div>
+        </div> --}}
+        <div class="field-group">
+            <span class="field-label">Level:</span>
+            <div class="field-value">{{ $data->student_level ?? '' }}</div>
+        </div>
+        <div class="field-group">
+            <span class="field-label">Start Date:</span>
+            <div class="field-value">{{ $data->start_date ?? '' }}</div>
+        </div>
     </div>
-</body>
 
+    <div class="section">
+        <div class="section-title">Family Information</div>
+        <div class="field-group">
+            <span class="field-label">Siblings:</span>
+            <div class="field-value">{{ $data->siblings ?? '' }}</div>
+        </div>
+        <div class="field-group">
+            <span class="field-label">Siblings' Names:</span>
+            <div class="field-value">{{ $data->siblings_names ?? '' }}</div>
+        </div>
+        <div class="field-group">
+            <span class="field-label">Parent Name:</span>
+            <div class="field-value">{{ $data->parent_name ?? '' }}</div>
+        </div>
+        <div class="field-group">
+            <span class="field-label">Parent Relationship:</span>
+            <div class="field-value">{{ $data->student_relationship ?? '' }}</div>
+        </div>
+        <div class="field-group">
+            <span class="field-label">Parent Phone Number:</span>
+            <div class="field-value">{{ $data->parent_phonenumber ?? '' }}</div>
+        </div>
+        <div class="field-group">
+            <span class="field-label">Parent Email:</span>
+            <div class="field-value">{{ $data->parent_email ?? '' }}</div>
+        </div>
+        <div class="field-group">
+            <span class="field-label">Parent Occupation:</span>
+            <div class="field-value">{{ $data->parent_occupation ?? '' }}</div>
+        </div>
+        {{-- <div class="field-group">
+            <span class="field-label">Parent Attachment:</span>
+            <div class="field-value">
+                <a href="{{ $data->parent_attachment ?? '#' }}" class="attachment-link">Download</a>
+            </div>
+        </div> --}}
+
+        <div class="field-group">
+            <span class="field-label">Second Parent Name:</span>
+            <div class="field-value">{{ $data->second_parent_name ?? '' }}</div>
+        </div>
+        <div class="field-group">
+            <span class="field-label">Second Parent Relationship:</span>
+            <div class="field-value">{{ $data->student_second_relationship ?? '' }}</div>
+        </div>
+        <div class="field-group">
+            <span class="field-label">Second Parent Phone Number:</span>
+            <div class="field-value">{{ $data->second_parent_phonenumber ?? '' }}</div>
+        </div>
+        <div class="field-group">
+            <span class="field-label">Second Parent Email:</span>
+            <div class="field-value">{{ $data->second_parent_email ?? '' }}</div>
+        </div>
+        <div class="field-group">
+            <span class="field-label">Second Parent Occupation:</span>
+            <div class="field-value">{{ $data->second_parent_occupation ?? '' }}</div>
+        </div>
+        {{-- <div class="field-group">
+            <span class="field-label">Second Parent Attachment:</span>
+            <div class="field-value">
+                <a href="{{ $data->second_parent_attachment ?? '#' }}" class="attachment-link">Download</a>
+            </div>
+        </div> --}}
+        
+        
+    </div>
+
+    <div class="section">
+        <div class="section-title">Previous School Information</div>
+        <div class="field-group">
+            <span class="field-label">School Name:</span>
+            <div class="field-value">{{ $data->previous_school ?? '' }}</div>
+        </div>
+        <div class="field-group">
+            <span class="field-label">School Address:</span>
+            <div class="field-value">{{ $data->previous_school_address ?? '' }}</div>
+        </div>
+        <div class="field-group">
+            <span class="field-label">Last Grade Completed:</span>
+            <div class="field-value">{{ $data->last_grade_completed ?? '' }}</div>
+        </div>
+        <div class="field-group">
+            <span class="field-label">Reasons for Leaving:</span>
+            <div class="field-value">{{ $data->reasons ?? '' }}</div>
+        </div>
+        {{-- <div class="field-group">
+            <span class="field-label">School Attachments:</span>
+            <div class="field-value">
+                <a href="{{ $data->previous_school_attachments ?? '#' }}" class="attachment-link">Download</a>
+            </div>
+        </div> --}}
+    </div>
+
+    <div class="section">
+        <div class="section-title">Special Needs</div>
+        <div class="field-group">
+            <span class="field-label">Special Needs:</span>
+            <div class="field-value">{{ $data->special_needs ?? '' }}</div>
+        </div>
+        <div class="field-group">
+            <span class="field-label">Details:</span>
+            <div class="field-value">{{ $data->special_needs_details ?? '' }}</div>
+        </div>
+        {{-- <div class="field-group">
+            <span class="field-label">Attachments:</span>
+            <div class="field-value">
+                <a href="{{ $data->special_needs_attachments ?? '#' }}" class="attachment-link">Download</a>
+            </div>
+        </div> --}}
+    </div>
+
+    <div class="section">
+        <div class="section-title">Medical Conditions</div>
+        <div class="field-group">
+            <span class="field-label">Medical Conditions:</span>
+            <div class="field-value">{{ $data->medical_conditions ?? '' }}</div>
+        </div>
+        <div class="field-group">
+            <span class="field-label">Details:</span>
+            <div class="field-value">{{ $data->medical_conditions_details ?? '' }}</div>
+        </div>
+        <div class="field-group">
+            <span class="field-label">Medication:</span>
+            <div class="field-value">{{ $data->medication ?? '' }}</div>
+        </div>
+        <div class="field-group">
+            <span class="field-label">Medication Details:</span>
+            <div class="field-value">{{ $data->medication_details ?? '' }}</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Immunizations</div>
+        <div class="field-group">
+            <span class="field-label">Immunizations:</span>
+            <div class="field-value">{{ $data->immunizations ?? '' }}</div>
+        </div>
+        <div class="field-group">
+            <span class="field-label">Details:</span>
+            <div class="field-value">{{ $data->immunizations_details ?? '' }}</div>
+        </div>
+        {{-- <div class="field-group">
+            <span class="field-label">Attachments:</span>
+            <div class="field-value">
+                <a href="{{ $data->immunizations_attachments ?? '#' }}" class="attachment-link">Download</a>
+            </div>
+        </div> --}}
+    </div>
+
+    <div class="section">
+        <div class="section-title">Emergency Contact</div>
+        <div class="field-group">
+            <span class="field-label">Contact Name:</span>
+            <div class="field-value">{{ $data->emergency_contact ?? '' }}</div>
+        </div>
+        <div class="field-group">
+            <span class="field-label">Relationship:</span>
+            <div class="field-value">{{ $data->emergency_contact_relationship ?? '' }}</div>
+        </div>
+        <div class="field-group">
+            <span class="field-label">Phone Number:</span>
+            <div class="field-value">{{ $data->emergency_contact_contact ?? '' }}</div>
+        </div>
+    </div>
+
+</body>
 </html>

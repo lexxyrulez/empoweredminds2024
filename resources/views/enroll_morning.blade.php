@@ -20,127 +20,129 @@
             </div>
         </div>
 
-</section>
+    </section>
 
 
 
 
-<!-- Supporting Documents Section -->
-<div class="supporting-documents-section">
-    <h3 class="section-title">Download Supporting Documents</h3>
-    <div class="documents-container">
-        <!-- OUTLINE -->
-        <a href="assets/documents/outline_2025.pdf" class="document-button" download>
-            <i class="bi bi-download"></i> OUTLINE
-        </a>
-        <!-- HOURLY CHARGES -->
-        <a href="assets/documents/fees_tructure_2025.pdf" class="document-button" download>
-            <i class="bi bi-download"></i> HOURLY CHARGES
-        </a>
-        <!-- FEE STRUCTURE -->
-        <a href="assets/documents/EMLC_HOURLY_CHARGES_2025.pdf" class="document-button" download>
-            <i class="bi bi-download"></i> FEE STRUCTURE 2025
-        </a>
+    <!-- Supporting Documents Section -->
+    <div class="supporting-documents-section">
+        <h3 class="section-title">Download Supporting Documents</h3>
+        <div class="documents-container">
+            <!-- OUTLINE -->
+            <a href="assets/documents/outline_2025.pdf" class="document-button" download>
+                <i class="bi bi-download"></i> OUTLINE
+            </a>
+            <!-- HOURLY CHARGES -->
+            <a href="assets/documents/fees_tructure_2025.pdf" class="document-button" download>
+                <i class="bi bi-download"></i> HOURLY CHARGES
+            </a>
+            <!-- FEE STRUCTURE -->
+            <a href="assets/documents/EMLC_HOURLY_CHARGES_2025.pdf" class="document-button" download>
+                <i class="bi bi-download"></i> FEE STRUCTURE 2025
+            </a>
+        </div>
     </div>
-</div>
 
-<!-- Inline CSS -->
-<style>
-    /* Section Styling */
-    .supporting-documents-section {
-        text-align: center;
-        background-color: #f8f9fa;
-        padding: 20px;
-        border: 2px solid #d57176;
-        border-radius: 10px;
-        margin: 20px 0;
-    }
+    <!-- Inline CSS -->
+    <style>
+        /* Section Styling */
+        .supporting-documents-section {
+            text-align: center;
+            background-color: #f8f9fa;
+            padding: 20px;
+            border: 2px solid #d57176;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
 
-    /* Title Styling */
-    .section-title {
-        font-family: 'Gagalin', sans-serif;
-        color: #d57176;
-        margin-bottom: 20px;
-    }
+        /* Title Styling */
+        .section-title {
+            font-family: 'Gagalin', sans-serif;
+            color: #d57176;
+            margin-bottom: 20px;
+        }
 
-    /* Documents Container */
-    .documents-container {
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-        flex-wrap: wrap;
-    }
-
-    /* Button Styling */
-    .document-button {
-        display: inline-block;
-        padding: 10px 20px;
-        font-family: 'Gagalin', sans-serif;
-        font-size: 16px;
-        color: #fff;
-        text-decoration: none;
-        text-align: center;
-        border-radius: 5px;
-        transition: all 0.3s ease-in-out;
-    }
-
-    /* Button Colors */
-    .document-button:nth-child(1) {
-        background-color:rgb(132, 175, 249);
-    }
-
-    .document-button:nth-child(2) {
-        background-color: #6c757d;
-    }
-
-    .document-button:nth-child(3) {
-        background-color:rgb(117, 246, 186);
-    }
-
-    /* Download Icon Styling */
-    .document-button i {
-        margin-right: 8px;
-        font-size: 18px;
-    }
-
-    /* Hover Effects */
-    .document-button:hover {
-        transform: scale(1.1);
-        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-    }
-
-    /* Responsive Design */
-    @media (max-width: 768px) {
+        /* Documents Container */
         .documents-container {
-            flex-direction: column;
-            gap: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
         }
 
+        /* Button Styling */
         .document-button {
-            width: 80%; /* Adjust for smaller screens */
-            margin: 0 auto;
+            display: inline-block;
+            padding: 10px 20px;
+            font-family: 'Gagalin', sans-serif;
+            font-size: 16px;
+            color: #fff;
+            text-decoration: none;
+            text-align: center;
+            border-radius: 5px;
+            transition: all 0.3s ease-in-out;
         }
-    }
-</style>
 
-<!-- Include Bootstrap Icons -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+        /* Button Colors */
+        .document-button:nth-child(1) {
+            background-color: rgb(132, 175, 249);
+        }
+
+        .document-button:nth-child(2) {
+            background-color: #6c757d;
+        }
+
+        .document-button:nth-child(3) {
+            background-color: rgb(117, 246, 186);
+        }
+
+        /* Download Icon Styling */
+        .document-button i {
+            margin-right: 8px;
+            font-size: 18px;
+        }
+
+        /* Hover Effects */
+        .document-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .documents-container {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .document-button {
+                width: 80%;
+                /* Adjust for smaller screens */
+                margin: 0 auto;
+            }
+        }
+    </style>
+
+    <!-- Include Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
 
 
 
-<section id="enroll-coming-soon" class="section" style="padding: 30px; background-color: #f9f9f9;">
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <!-- Title Section -->
-        <div class="text-center mb-4">
-    <h2 style="color: #d57176;">Enrollment Form</h2>
-    <p>Please fill in the details carefully and submit your application. We look forward to welcoming you to Empowered Minds Learning Center!</p>
-</div>
+    <section id="enroll-coming-soon" class="section" style="padding: 30px; background-color: #f9f9f9;">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+            <!-- Title Section -->
+            <div class="text-center mb-4">
+                <h2 style="color: #d57176;">Enrollment Form</h2>
+                <p>Please fill in the details carefully and submit your application. We look forward to welcoming you to
+                    Empowered Minds Learning Center!</p>
+            </div>
 
 
             <!-- Form Section -->
             <div id="enrollment-form" class="container mt-5">
-                <form action="{{route('enroll.submit')}}" method="POST" enctype="multipart/form-data">
+                <form action="{{ route('enroll.submit') }}" method="POST" enctype="multipart/form-data">
                     @csrf
                     <!-- Step 1: Student Details -->
                     <!-- Step 1: Student Details -->

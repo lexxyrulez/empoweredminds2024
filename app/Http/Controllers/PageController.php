@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Enrollment;
+use App\Models\TuitionEnrollment;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\File;
 use Carbon\Carbon;
@@ -63,10 +64,11 @@ class PageController extends Controller
         return view('enroll_tuition'); // Points to resources/views/contact.blade.php
     }
 
-
-
-
-
+    public function feedback()
+    {
+        return view('feedback'); // Points to resources/views/contact.blade.php
+    }
+    
     public function enrollSubmit(Request $request){
 
         $birth_certificate_filename = '';
@@ -160,7 +162,41 @@ class PageController extends Controller
         $enrollment->emergency_contact_contact = $request->emergency_phone;
         $enrollment->save();
 
-        return redirect()->back();
+        return redirect()->route('feedback');
+        
+    }
+
+    public function enrollTuitionSubmit(Request $request){
+
+        $parent1_id_filename = '';
+        if($request->hasFile('parent1_id')){
+            $parent1_id_file = $request->file('parent1_id');
+            $parent1_id_filename = time().'-'.$request->file('parent1_id')->getClientOriginalName();
+            $parent1_id_path = $parent1_id_file->store('uploads', 'public');
+        }
+
+        $enrollment = new TuitionEnrollment();
+        $enrollment->student_name = $request->student_name;
+        $enrollment->student_name = $request->student_fullname;
+        $enrollment->student_dob = Carbon::parse($request->student_dob)->format('Y-m-d');
+        $enrollment->student_gender = $request->student_gender;
+        $enrollment->student_nationality = $request->student_nationality;
+        $enrollment->student_level = $request->student_level;
+        $enrollment->school_name = $request->school_name;
+        $enrollment->school_curriculum = $request->school_curriculum;
+        $enrollment->tutoring_schedule = json_encode($request->tutoring_schedule);
+        $enrollment->weekly_sessions = $request->weekly_sessions;
+        $enrollment->parent1_name = $request->parent1_name;
+        $enrollment->parent1_relationship = $request->parent1_relationship;
+        $enrollment->parent1_phone = $request->parent1_phone;
+        $enrollment->parent1_email = $request->parent1_email;
+        $enrollment->parent1_occupation = $request->parent1_occupation;
+        $enrollment->parent1_id = $parent1_id_filename;
+        $enrollment->subjects = json_encode($request->subjects);
+        $enrollment->learning_difficulties = $request->learning_difficulties;
+        $enrollment->save();
+
+        return redirect()->route('feedback');
         
     }
 

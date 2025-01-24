@@ -9,12 +9,12 @@
             <!-- Bread crumb -->
             <div class="row page-titles">
                 <div class="col-md-5 align-self-center">
-                    <h3 class="text-primary">Morning Enrollment</h3>
+                    <h3 class="text-primary">Evening Enrollment</h3>
                 </div>
                 <div class="col-md-7 align-self-center">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="/home">Home</a></li>
-                        <li class="breadcrumb-item active">Morning Enrollment</li>
+                        <li class="breadcrumb-item active">Evening Enrollment</li>
                     </ol>
                 </div>
             </div>
@@ -26,7 +26,7 @@
                     <div class="col-12">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Morining Enrollment Data</h4>
+                                <h4 class="card-title">Evening Enrollment Data</h4>
                                 {{-- <h6 class="card-subtitle">Export data to Copy, CSV, Excel, PDF & Print</h6> --}}
                                 <div class="table-responsive m-t-40">
                                     <table class="display nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%">
@@ -46,12 +46,12 @@
                                             <tr>
                                                 <td>{{$loop->iteration}}</td>
                                                 <td>{{$data->student_name}}</td>
-                                                <td>{{$data->parent_name}}</td>
-                                                <td>{{$data->parent_phonenumber}}</td>
-                                                <td>{{$data->parent_email}}</td>
+                                                <td>{{$data->parent1_name}}</td>
+                                                <td>{{$data->parent1_phone}}</td>
+                                                <td>{{$data->parent1_email}}</td>
                                                 <td>{{$data->student_level}}</td>
                                                 <td>
-                                                    <a href="{{ route('admin.enrollment.view', ['id' => $data->id]) }}" title="View Details">
+                                                    <a href="{{ route('admin.enrollment.tuition.view', ['id' => $data->id]) }}" title="View Details">
                                                         <i class="fa fa-eye" aria-hidden="true"></i>
                                                     </a>
                                                 </td>

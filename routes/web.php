@@ -42,9 +42,11 @@ Route::get('/news-details', [PageController::class, 'newsdetails'])->name('news-
 // Route for the all enroll page
 Route::get('/enroll', [PageController::class, 'enroll'])->name('enroll');
 Route::get('/enroll_morning', [PageController::class, 'enroll_morning'])->name('enroll_morning');
-Route::get('/enroll_tuition', [PageController::class, 'enroll_tuition'])->name('enroll_tuition');    
+Route::get('/enroll_tuition', [PageController::class, 'enroll_tuition'])->name('enroll_tuition');   
+Route::get('/thank-you-feedback', [PageController::class, 'feedback'])->name('feedback');    
 
 Route::post('/enroll/submit', [PageController::class, 'enrollSubmit'])->name('enroll.submit');
+Route::post('/enroll/tuition/submit', [PageController::class, 'enrollTuitionSubmit'])->name('enroll.tuition.submit');
 
 Auth::routes();
 
@@ -53,5 +55,8 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/admin/enrollments', [App\Http\Controllers\AdminController::class, 'indexEnrollment'])->name('admin.enrollment.index');
 Route::get('/admin/enrollments/view/{id}', [App\Http\Controllers\AdminController::class, 'viewEnrollment'])->name('admin.enrollment.view');
 Route::get('/admin/enrollments/download/{id}',[App\Http\Controllers\AdminController::class, 'downloadEnrollment'])->name('admin.enrollment.download');
+Route::get('/admin/tuition/enrollments', [App\Http\Controllers\AdminController::class, 'indexTuitionEnrollment'])->name('admin.enrollment.tuition.index');
+Route::get('/admin/tuition/enrollments/view/{id}', [App\Http\Controllers\AdminController::class, 'viewTuitionEnrollment'])->name('admin.enrollment.tuition.view');
+Route::get('/admin/tuition/enrollments/download/{id}',[App\Http\Controllers\AdminController::class, 'downloadTuitionEnrollment'])->name('admin.enrollment.tuition.download');
 
 Route::post('/contact/send', [ContactController::class, 'send'])->name('contact.send');

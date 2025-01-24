@@ -91,7 +91,7 @@
                                                     <label>Attachment</label>
                                                     @if (!empty($data->student_attachment))
                                                         <p>Current File: <a
-                                                                href="{{ asset('upload/' . $data->student_attachment) }}"
+                                                                href="{{ asset('/storage/uploads/'.$data->student_attachment) }}"
                                                                 target="_blank">View</a></p>
                                                     @endif
                                                 </div>
@@ -194,7 +194,7 @@
                                                 <div class="form-group">
                                                     <label>Parent 1 Attachment</label>
                                                     @if (!empty($data->parent_attachment))
-                                                        <p>Current File: <a href="{{ asset($data->parent_attachment) }}"
+                                                        <p>Current File: <a href="{{ asset('/storage/uploads/'.$data->parent_attachment) }}"
                                                                 target="_blank">View</a></p>
                                                     @endif
                                                 </div>
@@ -249,7 +249,7 @@
                                                     <label>Parent 2 Attachment</label>
                                                     @if (!empty($data->second_parent_attachment))
                                                         <p>Current File: <a
-                                                                href="{{ asset($data->second_parent_attachment) }}"
+                                                                href="{{ asset('/storage/uploads/'.$data->second_parent_attachment) }}"
                                                                 target="_blank">View</a></p>
                                                     @endif
                                                 </div>
@@ -353,7 +353,7 @@
                                                     <label>Special Needs Attachments</label>
                                                     @if (!empty($data->special_needs_attachments))
                                                         <p>Current File: <a
-                                                                href="{{ asset($data->special_needs_attachments) }}"
+                                                                href="{{ asset('/storage/uploads/'.$data->special_needs_attachments) }}"
                                                                 target="_blank">View</a></p>
                                                     @endif
                                                 </div>
@@ -419,7 +419,7 @@
                                                     <label>Immunizations Attachments</label>
                                                     @if (!empty($data->immunizations_attachments))
                                                         <p>Current File: <a
-                                                                href="{{ asset($data->immunizations_attachments) }}"
+                                                                href="{{ asset('/storage/uploads/'.$data->immunizations_attachments) }}"
                                                                 target="_blank">View</a></p>
                                                     @endif
                                                 </div>
