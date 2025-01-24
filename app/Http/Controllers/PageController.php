@@ -177,7 +177,6 @@ class PageController extends Controller
 
         $enrollment = new TuitionEnrollment();
         $enrollment->student_name = $request->student_name;
-        $enrollment->student_name = $request->student_fullname;
         $enrollment->student_dob = Carbon::parse($request->student_dob)->format('Y-m-d');
         $enrollment->student_gender = $request->student_gender;
         $enrollment->student_nationality = $request->student_nationality;
