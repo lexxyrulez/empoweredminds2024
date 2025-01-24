@@ -22,6 +22,7 @@
                     <li><i class="bi bi-chevron-right"></i> <a href="#">About Us</a></li>
                     <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
                     <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of Service</a></li>
+                    <li><i class="bi bi-chevron-right"></i> <a href="{{ route('login') }}">EMS</a></li>
                 </ul>
             </div>
 

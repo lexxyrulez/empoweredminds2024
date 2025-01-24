@@ -18,7 +18,7 @@
                             every learner.</p>
                         <div class="d-flex">
                             <a href="{{ route('about') }}" class="btn-get-started">Learn More</a>
-                            <a href="https://www.youtube.com/shorts/jNQAARx2jEs"
+                            <a href="assets/video/video.mp4"
                                 class="glightbox btn-watch-video d-flex align-items-center">
                                 <i class="bi bi-play-circle"></i><span>Watch Our Story</span>
                             </a>
@@ -190,19 +190,19 @@
 
 
         <!-- Pricing Section -->
-        <section id="pricing" class="pricing section light-background">
+        <!--section id="pricing" class="pricing section light-background">
 
-            <!-- Section Title -->
+            <!-- Section Title >
             <div class="container section-title" data-aos="fade-up">
                 <h2>New Offers</h2>
                 <p>Select a plan that fits your schedule and budget at Empowered Minds Learning Center.</p>
-            </div><!-- End Section Title -->
+            </div><!-- End Section Title >
 
             <div class="container">
 
                 <div class="row gy-4">
 
-                    <!-- 3 Days Plan -->
+                    <!-- 3 Days Plan >
                     <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
                         <div class="pricing-item">
                             <h3>3 Days Plan</h3>
@@ -219,7 +219,7 @@
                         </div>
                     </div><!-- End Pricing Item -->
 
-                    <!-- 5 Days Plan -->
+                    <!-- 5 Days Plan >
                     <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
                         <div class="pricing-item featured">
                             <h3>5 Days Plan</h3>
@@ -235,7 +235,7 @@
                         </div>
                     </div><!-- End Pricing Item -->
 
-                    <!-- 6 Days Plan -->
+                    <!-- 6 Days Plan >
                     <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="300">
                         <div class="pricing-item">
                             <h3>6 Days Plan</h3>
@@ -376,7 +376,7 @@
                             <div class="testimonial-item">
                                 <img src="assets/img/testimonials/testimonials-1.png" class="testimonial-img"
                                     alt="Saul Goodman">
-                                <h3>Saul Goodman</h3>
+                                <h3>Saul</h3>
 
                                 <div class="stars">
                                     <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
@@ -397,7 +397,7 @@
                             <div class="testimonial-item">
                                 <img src="assets/img/testimonials/testimonials-2.png" class="testimonial-img"
                                     alt="Sara Wilsson">
-                                <h3>Sara Wilsson</h3>
+                                <h3>Sara</h3>
 
                                 <div class="stars">
                                     <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
@@ -418,7 +418,7 @@
                             <div class="testimonial-item">
                                 <img src="assets/img/testimonials/testimonials-3.png" class="testimonial-img"
                                     alt="Jena Karlis">
-                                <h3>Jena Karlis</h3>
+                                <h3>Jena</h3>
 
                                 <div class="stars">
                                     <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
@@ -439,7 +439,7 @@
                             <div class="testimonial-item">
                                 <img src="assets/img/testimonials/testimonials-4.png" class="testimonial-img"
                                     alt="Matt Brandon">
-                                <h3>Matt Brandon</h3>
+                                <h3>Matt</h3>
 
                                 <div class="stars">
                                     <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
@@ -460,8 +460,8 @@
                             <div class="testimonial-item">
                                 <img src="assets/img/testimonials/testimonials-5.png" class="testimonial-img"
                                     alt="John Larson">
-                                <h3>John Larson</h3>
-                                <h4>Entrepreneur</h4>
+                                <h3>John</h3>
+                       
                                 <div class="stars">
                                     <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                                         class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
