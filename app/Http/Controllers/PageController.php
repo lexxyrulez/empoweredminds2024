@@ -78,7 +78,7 @@ class PageController extends Controller
         $school_records_attachments = [];
         if ($request->hasFile('school_records')) {
             foreach ($request->file('school_records') as $file) {
-                $path = $file->store('upload', 'public');
+                $path = $file->store('uploads', 'public');
                 $school_records_attachments[] = $path;
             }
         }

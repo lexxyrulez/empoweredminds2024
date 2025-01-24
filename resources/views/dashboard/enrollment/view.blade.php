@@ -316,9 +316,12 @@
                                                 <div class="form-group">
                                                     <label>Previous School Attachments</label>
                                                     @if (!empty($data->parent_attachment))
-                                                        <p>Current File: <a
-                                                                href="{{ asset($data->previous_school_attachments) }}"
+                                                        <p>Current Files: 
+                                                            @foreach (json_decode($data->previous_school_attachments) as $item)
+                                                            <a href="{{ asset('storage/'.$item) }}"
                                                                 target="_blank">View</a></p>
+                                                            @endforeach
+                                                            
                                                     @endif
                                                 </div>
                                             </div>
