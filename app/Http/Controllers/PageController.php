@@ -75,27 +75,27 @@ class PageController extends Controller
         if($request->hasFile('birth_certificate')){
             $birth_certificate_file = $request->file('birth_certificate');
             $birth_certificate_filename = time().'-'.$request->file('birth_certificate')->getClientOriginalName();
-            $birth_certificate_path = $birth_certificate_file->store('uploads', 'public');
+            $birth_certificate_path = $birth_certificate_file->storeAs('uploads', 'public');
         }
 
         $parent1_id_filename = '';
         if($request->hasFile('parent1_id')){
             $parent1_id_file = $request->file('parent1_id');
             $parent1_id_filename = time().'-'.$request->file('parent1_id')->getClientOriginalName();
-            $parent1_id_path = $parent1_id_file->store('uploads', 'public');
+            $parent1_id_path = $parent1_id_file->storeAs('uploads', 'public');
         }
 
         $parent2_id_filename = '';
         if($request->hasFile('parent2_id')){
             $parent2_id_file = $request->file('parent2_id');
             $parent2_id_filename = time().'-'.$request->file('parent2_id')->getClientOriginalName();
-            $parent2_id_path = $parent2_id_file->store('uploads', 'public');
+            $parent2_id_path = $parent2_id_file->storeAs('uploads', 'public');
         }
 
         $school_records_attachments = [];
         if ($request->hasFile('school_records')) {
             foreach ($request->file('school_records') as $file) {
-                $path = $file->store('uploads', 'public');
+                $path = $file->storeAs('uploads', 'public');
                 $school_records_attachments[] = $path;
             }
         }
@@ -104,14 +104,14 @@ class PageController extends Controller
         if($request->hasFile('learning_difficulties_file')){
             $learning_difficulties_file = $request->file('learning_difficulties_file');
             $learning_difficulties_filename = time().'-'.$request->file('learning_difficulties_file')->getClientOriginalName();
-            $learning_difficulties_file = $learning_difficulties_file->store('uploads', 'public');
+            $learning_difficulties_file = $learning_difficulties_file->storeAs('uploads', 'public');
         }
 
         $immunization_filename = '';
         if($request->hasFile('learning_difficulties_file')){
             $immunization_file = $request->file('immunization_file');
             $immunization_filename = time().'-'.$request->file('immunization_file')->getClientOriginalName();
-            $immunization_file = $immunization_file->store('uploads', 'public');
+            $immunization_file = $immunization_file->storeAs('uploads', 'public');
         }
 
 
@@ -172,7 +172,7 @@ class PageController extends Controller
         if($request->hasFile('parent1_id')){
             $parent1_id_file = $request->file('parent1_id');
             $parent1_id_filename = time().'-'.$request->file('parent1_id')->getClientOriginalName();
-            $parent1_id_path = $parent1_id_file->store('uploads', 'public');
+            $parent1_id_path = $parent1_id_file->storeAs('uploads', 'public');
         }
 
         $enrollment = new TuitionEnrollment();
