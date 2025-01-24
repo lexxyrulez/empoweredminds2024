@@ -39,8 +39,11 @@ Route::get('/newsandevents', [PageController::class, 'news'])->name('newsandeven
 Route::get('/news-details', [PageController::class, 'newsdetails'])->name('news-details');
 
 
-// Route for the all news page
+// Route for the all enroll page
 Route::get('/enroll', [PageController::class, 'enroll'])->name('enroll');
+Route::get('/enroll_morning', [PageController::class, 'enroll_morning'])->name('enroll_morning');
+Route::get('/enroll_tuition', [PageController::class, 'enroll_tuition'])->name('enroll_tuition');    
+
 Route::post('/enroll/submit', [PageController::class, 'enrollSubmit'])->name('enroll.submit');
 
 Auth::routes();

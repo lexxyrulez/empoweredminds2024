@@ -190,6 +190,26 @@ document.querySelectorAll('.previous-step').forEach(button => {
     });
 </script>
 
+<script>
+    // JavaScript for multi-step navigation
+    document.querySelectorAll('.next-step').forEach(btn => {
+        btn.addEventListener('click', function () {
+            this.closest('.form-step').style.display = 'none';
+            this.closest('.form-step').nextElementSibling.style.display = 'block';
+        });
+    });
+
+    document.querySelectorAll('.previous-step').forEach(btn => {
+        btn.addEventListener('click', function () {
+            this.closest('.form-step').style.display = 'none';
+            this.closest('.form-step').previousElementSibling.style.display = 'block';
+        });
+    });
+</script>
+
+
+
+
 
 
 </body>

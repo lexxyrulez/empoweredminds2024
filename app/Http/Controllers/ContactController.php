@@ -20,7 +20,7 @@ class ContactController extends Controller
         ]);
 
         // Send email using the ContactFormMail Mailable
-        Mail::to('test@empoweredmindslearning.co.tz')->send(new ContactFormMail($validated));
+        Mail::to('info@empoweredmindslearning.co.tz')->send(new ContactFormMail($validated));
 
         // Redirect back with success message
         return back()->with('success', 'Your message has been sent successfully!');

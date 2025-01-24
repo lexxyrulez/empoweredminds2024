@@ -52,6 +52,21 @@ class PageController extends Controller
         return view('enroll'); // Points to resources/views/contact.blade.php
     }
 
+
+    public function enroll_morning()
+    {
+        return view('enroll_morning'); // Points to resources/views/contact.blade.php
+    }
+
+    public function enroll_tuition()
+    {
+        return view('enroll_tuition'); // Points to resources/views/contact.blade.php
+    }
+
+
+
+
+
     public function enrollSubmit(Request $request){
 
         $birth_certificate_filename = '';

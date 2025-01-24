@@ -84,5 +84,6 @@
 
         <!-- Enroll Button -->
         <a class="btn-getstarted" href="{{ route('enroll') }}" style="background-color: #d57176; color: white; padding: 8px 16px; border-radius: 4px; text-decoration: none;">Enroll Now</a>
+        
     </div>
 </header>
