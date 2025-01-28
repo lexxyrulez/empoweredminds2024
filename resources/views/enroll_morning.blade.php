@@ -84,18 +84,20 @@
             transition: all 0.3s ease-in-out;
         }
 
-        /* Button Colors */
-        .document-button:nth-child(1) {
-            background-color: rgb(132, 175, 249);
-        }
+      
+    /* Button Colors */
+    .document-button:nth-child(1) {
+        background-color: #D7A49A;
+    }
 
-        .document-button:nth-child(2) {
-            background-color: #6c757d;
-        }
+    .document-button:nth-child(2) {
+        background-color: #D7A49A;
+    }
 
-        .document-button:nth-child(3) {
-            background-color: rgb(117, 246, 186);
-        }
+    .document-button:nth-child(3) {
+        background-color: #D7A49A;
+    }
+
 
         /* Download Icon Styling */
         .document-button i {

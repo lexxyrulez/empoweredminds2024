@@ -81,18 +81,20 @@
             transition: all 0.3s ease-in-out;
         }
 
-        /* Button Colors */
-        .document-button:nth-child(1) {
-            background-color: rgb(132, 175, 249);
-        }
+       
+    /* Button Colors */
+    .document-button:nth-child(1) {
+        background-color: #D7A49A;
+    }
 
-        .document-button:nth-child(2) {
-            background-color: #6c757d;
-        }
+    .document-button:nth-child(2) {
+        background-color: #D7A49A;
+    }
 
-        .document-button:nth-child(3) {
-            background-color: rgb(117, 246, 186);
-        }
+    .document-button:nth-child(3) {
+        background-color: #D7A49A;
+    }
+
 
         /* Download Icon Styling */
         .document-button i {
@@ -227,32 +229,97 @@
                     <button type="button" class="btn btn-primary float-end next-step">Next</button>
                 </div>
 
+               
                 <!-- Step 3: Tutoring Details -->
-                <div class="form-step" id="step-3" style="display: none;">
-                    <h3>Tutoring Details</h3>
-                    <div class="mb-3">
-                        <label for="subjects" class="form-label">Subjects for Tutoring*</label>
-                        <select style="width: 100%" multiple name="subjects[]" id="subjects" class="form-control" required>
-                            <option value="Language (ESL)">Language (ESL)</option>
-                            <option value="English">English</option>
-                            <option value="Mathematics">Mathematics</option>
-                            <option value="Science">Science</option>
-                            <option value="History">History</option>
-                            <option value="Geography">Geography</option>
-                            <option value="Arts and Design">Arts and Design</option>
-                            <option value="Economics">Economics</option>
-                        </select>
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label">Does the student have learning difficulties or special needs?</label>
-                        <div>
-                            <input type="radio" name="learning_difficulties" value="Yes"> Yes
-                            <input type="radio" name="learning_difficulties" value="No"> No
-                        </div>
-                    </div>
-                    <button type="button" class="btn btn-secondary previous-step">Back</button>
-                    <button type="submit" class="btn btn-primary float-end next-step">Submit</button>
-                </div>
+<!-- Step 3: Tutoring Details -->
+<div class="form-step" id="step-3" style="display: none;">
+    <h3>Tutoring Details</h3>
+
+    <!-- Subjects for Tutoring -->
+    <div class="mb-3">
+        <label for="subjects" class="form-label">Subjects for Tutoring*</label>
+        <select style="width: 100%" multiple name="subjects[]" id="subjects" class="form-control" required>
+            <option value="Language (ESL)">Language (ESL)</option>
+            <option value="English">English</option>
+            <option value="Mathematics">Mathematics</option>
+            <option value="Science">Science</option>
+            <option value="History">History</option>
+            <option value="Geography">Geography</option>
+            <option value="Arts and Design">Arts and Design</option>
+            <option value="Economics">Economics</option>
+        </select>
+    </div>
+
+    <!-- Learning Challenges -->
+    <div class="mb-3">
+        <label class="form-label">Does the student have learning challenges (e.g., Autism, Dyslexia)?*</label>
+        <div>
+            <input type="radio" name="learning_challenges" value="Yes" id="learning-challenges-yes" required>
+            <label for="learning-challenges-yes">Yes</label>
+            <input type="radio" name="learning_challenges" value="No" id="learning-challenges-no">
+            <label for="learning-challenges-no">No</label>
+        </div>
+        <div id="learning-challenges-details" class="mt-2" style="display: none;">
+            <label for="learning-challenges-file" class="form-label">If yes, please provide details and upload supporting documentation:</label>
+            <textarea name="learning_challenges_details" id="learning-challenges-text" class="form-control mb-2" placeholder="Provide details"></textarea>
+            <input type="file" name="learning_challenges_file" id="learning-challenges-file" class="form-control">
+        </div>
+    </div>
+
+    <!-- Medical Issues -->
+    <div class="mb-3">
+        <label class="form-label">Does the student have any medical issues?*</label>
+        <div>
+            <input type="radio" name="medical_issues" value="Yes" id="medical-issues-yes" required>
+            <label for="medical-issues-yes">Yes</label>
+            <input type="radio" name="medical_issues" value="No" id="medical-issues-no">
+            <label for="medical-issues-no">No</label>
+        </div>
+        <div id="medical-issues-details" class="mt-2" style="display: none;">
+            <label for="medical-issues-text" class="form-label">If yes, please provide details:</label>
+            <textarea name="medical_issues_details" id="medical-issues-text" class="form-control mb-2" placeholder="Provide details"></textarea>
+            <label for="medical-issues-file" class="form-label">Upload supporting documentation:</label>
+            <input type="file" name="medical_issues_file" id="medical-issues-file" class="form-control">
+        </div>
+        <label for="medical-issues-file" class="form-label">Upload Supporting Documentation for Medical Issues:</label>
+<input type="file" name="medical_issues_file" id="medical-issues-file" class="form-control" required>
+
+    </div>
+
+    <!-- Further Assistance -->
+    <div class="mb-3">
+        <label for="further-assistance" class="form-label">Does the student require any further assistance?</label>
+        <textarea name="further_assistance" id="further-assistance" class="form-control" placeholder="Provide details (optional)"></textarea>
+    </div>
+
+    <!-- Pick and Drop Arrangements -->
+    <div class="mb-3">
+        <label for="pick-drop-person" class="form-label">Person Responsible for Pick and Drop</label>
+        <div class="mb-2">
+            <input type="text" name="pick_drop_person_name" id="pick-drop-person-name" class="form-control" placeholder="Full Name" required>
+        </div>
+        <div class="mb-2">
+            <input type="text" name="pick_drop_person_phone" id="pick-drop-person-phone" class="form-control" placeholder="Phone Number" required>
+        </div>
+        <div class="mb-2">
+            <input type="text" name="pick_drop_person_title" id="pick-drop-person-title" class="form-control" placeholder="Title/Relation to Student" required>
+        </div>
+        <label for="pick-drop-person-id" class="form-label">Upload a copy of their ID:</label>
+        <input type="file" name="pick_drop_person_id" id="pick-drop-person-id" class="form-control" required>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <button type="button" class="btn btn-secondary previous-step">Back</button>
+    <button type="submit" class="btn btn-primary float-end next-step">Submit</button>  
+</div>
+
+
+
+
+
+
+
+
             </form>
         </div>
         <!-- Include jQuery -->

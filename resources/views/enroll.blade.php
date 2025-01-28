@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Contact - Empowered Minds Learning Center')
+@section('title', 'Enroll - Empowered Minds Learning Center')
 
 @section('content')
 
@@ -86,15 +86,15 @@
 
     /* Button Colors */
     .document-button:nth-child(1) {
-        background-color:rgb(132, 175, 249);
+        background-color: #D7A49A;
     }
 
     .document-button:nth-child(2) {
-        background-color: #6c757d;
+        background-color: #D7A49A;
     }
 
     .document-button:nth-child(3) {
-        background-color:rgb(117, 246, 186);
+        background-color: #D7A49A;
     }
 
     /* Download Icon Styling */
@@ -141,8 +141,9 @@
                         <div class="icon" style="font-size: 40px; color: #d57176;">
                             <i class="bi bi-brightness-alt-high"></i>
                         </div>
-                        <h4 style="color: #d57176; margin-top: 15px;">Morning Students</h4>
-                        <p style="color: #666; font-size: 14px;">For a fresh start to the day</p>
+                        <h4 style="color: #d57176; margin-top: 15px;">Homeschooling  
+                        </h4>
+                        <p style="color: #666; font-size: 14px;">An alternative to traditional schooling, where students complete their education in a structured and supportive environment.</p>
                     </div>
                 </a>
             </div>
@@ -154,8 +155,8 @@
                         <div class="icon" style="font-size: 40px; color: #d57176;">
                             <i class="bi bi-moon"></i>
                         </div>
-                        <h4 style="color: #d57176; margin-top: 15px;">Evening Students</h4>
-                        <p style="color: #666; font-size: 14px;">Flexibility for busy learners</p>
+                        <h4 style="color: #d57176; margin-top: 15px;">Afterschool tutoring</h4>
+                        <p style="color: #666; font-size: 14px;">Designed to complement regular school hours, this program focuses on exam preparation and reinforcing daily lessons for academic success.</p>
                     </div>
                 </a>
             </div>
