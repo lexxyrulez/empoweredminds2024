@@ -221,11 +221,86 @@
                                             </div>  
                                             <div class="col-md-4">
                                                 <div class="form-group">
-                                                    <label>Learning difficulties or Special needs</label>
+                                                    <label>Learning challenges</label>
                                                     <input disabled type="text" name="previous_school_address"
                                                         class="form-control" placeholder="Previous School Address"
                                                         value="{{ $data->learning_difficulties ?? '' }}">
                                                 </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label>Medical Issues</label>
+                                                    <input 
+                                                        disabled 
+                                                        type="text" 
+                                                        name="medical_issues" 
+                                                        class="form-control" 
+                                                        placeholder="Medical Issues" 
+                                                        value="{{ $data->medical_issues ?? '' }}">
+                                                </div>
+                                            </div>  
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label>Medical Issues File</label>
+                                                    @if (!empty($data->medical_issues_file))
+                                                        <p>Current File: <a href="{{ asset('/storage/uploads/'.$data->medical_issues_file) }}"
+                                                                target="_blank">View</a></p>
+                                                    @endif
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label>Further Assistance</label>
+                                                    <input disabled type="text" name="further_assistance"
+                                                        class="form-control" placeholder="Further Assistance"
+                                                        value="{{ $data->further_assistance ?? '' }}">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label>Person Responsible for Pick and Drop Name</label>
+                                                    <input 
+                                                        disabled 
+                                                        type="text" 
+                                                        name="pick_drop_person_name" 
+                                                        class="form-control" 
+                                                        placeholder="Medical Issues" 
+                                                        value="{{ $data->pick_drop_person_name ?? '' }}">
+                                                </div>
+                                            </div>  
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label>Person Responsible for Pick and Drop Phone</label>
+                                                    <input 
+                                                        disabled 
+                                                        type="text" 
+                                                        name="pick_drop_person_phone" 
+                                                        class="form-control" 
+                                                        placeholder="Medical Issues" 
+                                                        value="{{ $data->pick_drop_person_phone ?? '' }}">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label>Person Responsible for Pick and Drop Title</label>
+                                                    <input disabled type="text" name="pick_drop_person_title"
+                                                        class="form-control" placeholder="Further Assistance"
+                                                        value="{{ $data->pick_drop_person_title ?? '' }}">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label>Person Responsible for Pick and Drop File</label>
+                                                @if (!empty($data->medical_issues_file))
+                                                    <p>Current File: <a href="{{ asset('/storage/uploads/'.$data->pick_drop_person_id) }}"
+                                                            target="_blank">View</a></p>
+                                                @endif
                                             </div>
                                         </div>
                                     </form>
@@ -233,10 +308,8 @@
                             </div>
                         </div>
                     </div>
+                    
                 </div>
-
-
-
             </div>
 
         </div>

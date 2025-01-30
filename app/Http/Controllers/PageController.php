@@ -72,46 +72,67 @@ class PageController extends Controller
     public function enrollSubmit(Request $request){
 
         $birth_certificate_filename = '';
-        if($request->hasFile('birth_certificate')){
+        if ($request->hasFile('birth_certificate')) {
             $birth_certificate_file = $request->file('birth_certificate');
-            $birth_certificate_filename = time().'-'.$request->file('birth_certificate')->getClientOriginalName();
-            $birth_certificate_path = $birth_certificate_file->storeAs('uploads', 'public');
+            
+            // Generate a unique filename
+            $birth_certificate_filename = time() . '-' . $birth_certificate_file->getClientOriginalName();
+            
+            // Store the file in 'uploads' folder inside 'storage/app/public'
+            $birth_certificate_path = $birth_certificate_file->storeAs('uploads', $birth_certificate_filename, 'public');
         }
 
         $parent1_id_filename = '';
-        if($request->hasFile('parent1_id')){
+        if ($request->hasFile('parent1_id')) {
             $parent1_id_file = $request->file('parent1_id');
-            $parent1_id_filename = time().'-'.$request->file('parent1_id')->getClientOriginalName();
-            $parent1_id_path = $parent1_id_file->storeAs('uploads', 'public');
+            
+            // Generate a unique filename
+            $parent1_id_filename = time() . '-' . $parent1_id_file->getClientOriginalName();
+            
+            // Store the file in 'uploads' folder inside 'storage/app/public'
+            $parent1_id_path = $parent1_id_file->storeAs('uploads', $parent1_id_filename, 'public');
         }
 
         $parent2_id_filename = '';
-        if($request->hasFile('parent2_id')){
+        if ($request->hasFile('parent2_id')) {
             $parent2_id_file = $request->file('parent2_id');
-            $parent2_id_filename = time().'-'.$request->file('parent2_id')->getClientOriginalName();
-            $parent2_id_path = $parent2_id_file->storeAs('uploads', 'public');
+            
+            // Generate a unique filename
+            $parent2_id_filename = time() . '-' . $parent2_id_file->getClientOriginalName();
+            
+            // Store the file in 'uploads' folder inside 'storage/app/public'
+            $parent2_id_path = $parent2_id_file->storeAs('uploads', $parent2_id_filename, 'public');
         }
 
         $school_records_attachments = [];
         if ($request->hasFile('school_records')) {
             foreach ($request->file('school_records') as $file) {
-                $path = $file->storeAs('uploads', 'public');
-                $school_records_attachments[] = $path;
+                $filename = time() . '-' . $file->getClientOriginalName();
+                $path = $file->storeAs('uploads', $filename, 'public');
+                $school_records_attachments[] = $filename;
             }
         }
 
         $learning_difficulties_filename = '';
-        if($request->hasFile('learning_difficulties_file')){
+        if ($request->hasFile('learning_difficulties_file')) {
             $learning_difficulties_file = $request->file('learning_difficulties_file');
-            $learning_difficulties_filename = time().'-'.$request->file('learning_difficulties_file')->getClientOriginalName();
-            $learning_difficulties_file = $learning_difficulties_file->storeAs('uploads', 'public');
+            
+            // Generate a unique filename
+            $learning_difficulties_filename = time() . '-' . $learning_difficulties_file->getClientOriginalName();
+            
+            // Store the file in 'uploads' folder inside 'storage/app/public'
+            $learning_difficulties_file_path = $learning_difficulties_file->storeAs('uploads', $learning_difficulties_filename, 'public');
         }
 
         $immunization_filename = '';
-        if($request->hasFile('learning_difficulties_file')){
+        if ($request->hasFile('immunization_file')) {
             $immunization_file = $request->file('immunization_file');
-            $immunization_filename = time().'-'.$request->file('immunization_file')->getClientOriginalName();
-            $immunization_file = $immunization_file->storeAs('uploads', 'public');
+            
+            // Generate a unique filename
+            $immunization_filename = time() . '-' . $immunization_file->getClientOriginalName();
+            
+            // Store the file in 'uploads' folder inside 'storage/app/public'
+            $immunization_file_path = $immunization_file->storeAs('uploads', $immunization_filename, 'public');
         }
 
 
@@ -169,10 +190,36 @@ class PageController extends Controller
     public function enrollTuitionSubmit(Request $request){
 
         $parent1_id_filename = '';
-        if($request->hasFile('parent1_id')){
+        if ($request->hasFile('parent1_id')) {
             $parent1_id_file = $request->file('parent1_id');
-            $parent1_id_filename = time().'-'.$request->file('parent1_id')->getClientOriginalName();
-            $parent1_id_path = $parent1_id_file->storeAs('uploads', 'public');
+            
+            // Generate a unique filename
+            $parent1_id_filename = time() . '-' . $parent1_id_file->getClientOriginalName();
+            
+            // Store the file in 'uploads' folder inside 'storage/app/public'
+            $parent1_id_path = $parent1_id_file->storeAs('uploads', $parent1_id_filename, 'public');
+        }
+
+        $medical_issues_filename = '';
+        if ($request->hasFile('medical_issues_file')) {
+            $medical_issues_file = $request->file('medical_issues_file');
+            
+            // Generate a unique filename
+            $medical_issues_filename = time() . '-' . $medical_issues_file->getClientOriginalName();
+            
+            // Store the file in 'uploads' folder inside 'storage/app/public'
+            $medical_issues_file_path = $medical_issues_file->storeAs('uploads', $medical_issues_filename, 'public');
+        }
+
+        $pick_drop_person_id_filename = '';
+        if ($request->hasFile('pick_drop_person_id')) {
+            $pick_drop_person_id = $request->file('pick_drop_person_id');
+            
+            // Generate a unique filename
+            $pick_drop_person_id_filename = time() . '-' . $pick_drop_person_id->getClientOriginalName();
+            
+            // Store the file in 'uploads' folder inside 'storage/app/public'
+            $pick_drop_person_id_path = $pick_drop_person_id->storeAs('uploads', $pick_drop_person_id_filename, 'public');
         }
 
         $enrollment = new TuitionEnrollment();
@@ -192,7 +239,14 @@ class PageController extends Controller
         $enrollment->parent1_occupation = $request->parent1_occupation;
         $enrollment->parent1_id = $parent1_id_filename;
         $enrollment->subjects = json_encode($request->subjects);
-        $enrollment->learning_difficulties = $request->learning_difficulties;
+        $enrollment->learning_difficulties = $request->learning_challenges;
+        $enrollment->medical_issues = $request->medical_issues;
+        $enrollment->medical_issues_file = $medical_issues_filename;
+        $enrollment->further_assistance = $request->further_assistance;
+        $enrollment->pick_drop_person_name = $request->pick_drop_person_name;
+        $enrollment->pick_drop_person_phone = $request->pick_drop_person_phone;
+        $enrollment->pick_drop_person_title = $request->pick_drop_person_title;
+        $enrollment->pick_drop_person_id = $pick_drop_person_id_filename;
         $enrollment->save();
 
         return redirect()->route('feedback');

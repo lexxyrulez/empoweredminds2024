@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,40 +14,48 @@
             max-width: 900px;
             color: #333;
         }
+
         .title {
             text-align: center;
             font-size: 26px;
             margin-bottom: 30px;
             color: #d57176;
         }
+
         .section {
             margin-bottom: 20px;
         }
+
         .section-title {
             font-size: 20px;
             font-weight: bold;
             margin-bottom: 15px;
             color: #555;
         }
+
         .field-group {
             margin-bottom: 10px;
         }
+
         .field-label {
             font-weight: bold;
             color: #555;
         }
+
         .field-value {
             padding: 8px;
             border: 1px solid #ddd;
             border-radius: 5px;
             background-color: #f8f9fa;
         }
+
         .attachment-link {
             color: #d57176;
             text-decoration: none;
         }
     </style>
 </head>
+
 <body>
     <div class="title">Evening Enrollment Form</div>
 
@@ -62,7 +71,7 @@
         </div>
         <div class="field-group">
             <span class="field-label">Date of Birth:</span>
-            <div class="field-value">{{ $data->student_dob ?? '' }}</div>
+            <div class="field-value">{{ \Carbon\Carbon::parse($data->student_dob)->format('d/m/Y') ?? '' }}</div>
         </div>
         <div class="field-group">
             <span class="field-label">Gender:</span>
@@ -72,12 +81,12 @@
             <span class="field-label">Nationality:</span>
             <div class="field-value">{{ $data->student_nationality ?? '' }}</div>
         </div>
-        {{-- <div class="field-group">
-            <span class="field-label">Attachment:</span>
+        <div class="field-group">
+            <span class="field-label">Student Birth Certificate:</span>
             <div class="field-value">
-                <a href="{{ $data->student_attachment ?? '#' }}" class="attachment-link">Download</a>
+                <<img style="width: 100px; height:100px" src="{{ $studentFileBase64 }}">
             </div>
-        </div> --}}
+        </div>
         <div class="field-group">
             <span class="field-label">Level:</span>
             <div class="field-value">{{ $data->student_level ?? '' }}</div>
@@ -118,12 +127,12 @@
             <span class="field-label">Parent Occupation:</span>
             <div class="field-value">{{ $data->parent_occupation ?? '' }}</div>
         </div>
-        {{-- <div class="field-group">
-            <span class="field-label">Parent Attachment:</span>
+        <div class="field-group">
+            <span class="field-label">Parent 1 Attachment:</span>
             <div class="field-value">
-                <a href="{{ $data->parent_attachment ?? '#' }}" class="attachment-link">Download</a>
+                <img style="width: 100px; height:100px" src="{{ $parent1FileBase64 }}">
             </div>
-        </div> --}}
+        </div>
 
         <div class="field-group">
             <span class="field-label">Second Parent Name:</span>
@@ -145,14 +154,14 @@
             <span class="field-label">Second Parent Occupation:</span>
             <div class="field-value">{{ $data->second_parent_occupation ?? '' }}</div>
         </div>
-        {{-- <div class="field-group">
+        <div class="field-group">
             <span class="field-label">Second Parent Attachment:</span>
             <div class="field-value">
-                <a href="{{ $data->second_parent_attachment ?? '#' }}" class="attachment-link">Download</a>
+                <img style="width: 100px; height:100px" src="{{ $parent2FileBase64 }}">
             </div>
-        </div> --}}
-        
-        
+        </div>
+
+
     </div>
 
     <div class="section">
@@ -173,12 +182,14 @@
             <span class="field-label">Reasons for Leaving:</span>
             <div class="field-value">{{ $data->reasons ?? '' }}</div>
         </div>
-        {{-- <div class="field-group">
+        <div class="field-group">
             <span class="field-label">School Attachments:</span>
             <div class="field-value">
-                <a href="{{ $data->previous_school_attachments ?? '#' }}" class="attachment-link">Download</a>
+                @foreach ($schoolFilesBase64 as $fileBase64)
+                    <img style="width: 100px; height:100px; margin-right:10px;" src="{{ $fileBase64 }}">
+                @endforeach
             </div>
-        </div> --}}
+        </div>
     </div>
 
     <div class="section">
@@ -191,12 +202,12 @@
             <span class="field-label">Details:</span>
             <div class="field-value">{{ $data->special_needs_details ?? '' }}</div>
         </div>
-        {{-- <div class="field-group">
+        <div class="field-group">
             <span class="field-label">Attachments:</span>
             <div class="field-value">
-                <a href="{{ $data->special_needs_attachments ?? '#' }}" class="attachment-link">Download</a>
+                <img style="width: 100px; height:100px" src="{{ $learningFileBase64 }}">
             </div>
-        </div> --}}
+        </div>
     </div>
 
     <div class="section">
@@ -229,12 +240,12 @@
             <span class="field-label">Details:</span>
             <div class="field-value">{{ $data->immunizations_details ?? '' }}</div>
         </div>
-        {{-- <div class="field-group">
+        <div class="field-group">
             <span class="field-label">Attachments:</span>
             <div class="field-value">
-                <a href="{{ $data->immunizations_attachments ?? '#' }}" class="attachment-link">Download</a>
+                <img style="width: 100px; height:100px" src="{{ $immunizationFileBase64 }}">
             </div>
-        </div> --}}
+        </div>
     </div>
 
     <div class="section">
@@ -254,4 +265,5 @@
     </div>
 
 </body>
+
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,19 +14,23 @@
             max-width: 800px;
             color: #333;
         }
+
         .title {
             text-align: center;
             font-size: 24px;
             margin-bottom: 20px;
             color: #d57176;
         }
+
         .field-group {
             margin-bottom: 15px;
         }
+
         .field-label {
             font-weight: bold;
             color: #555;
         }
+
         .field-value {
             padding: 10px;
             border: 1px solid #ddd;
@@ -34,16 +39,17 @@
         }
     </style>
 </head>
+
 <body>
     <div class="title">Evening Enrollment Form</div>
-    
+
     <div class="field-group">
         <span class="field-label">Student Name:</span>
         <div class="field-value">{{ $data->student_name ?? '' }}</div>
     </div>
     <div class="field-group">
         <span class="field-label">Date of Birth:</span>
-        <div class="field-value">{{ $data->student_dob ?? '' }}</div>
+        <div class="field-value"> {{ \Carbon\Carbon::parse($data->student_dob)->format('d/m/Y') ?? '' }}</div>
     </div>
     <div class="field-group">
         <span class="field-label">Gender:</span>
@@ -96,7 +102,7 @@
     <div class="field-group">
         <span class="field-label">Parent ID:</span>
         <div class="field-value">
-            <img style="width: 100px; height:100px" src="{{ asset('/storage/uploads/'.$data->parent1_id )?? '' }}">
+            <img style="width: 100px; height:100px" src="{{ $parentIdFileBase64 }}">
         </div>
     </div>
     <div class="field-group">
@@ -104,8 +110,41 @@
         <div class="field-value">{{ implode(', ', json_decode($data->subjects ?? '[]')) }}</div>
     </div>
     <div class="field-group">
-        <span class="field-label">Learning Difficulties:</span>
+        <span class="field-label">Learning challenges:</span>
         <div class="field-value">{{ $data->learning_difficulties ?? 'None' }}</div>
     </div>
+    <div class="field-group">
+        <span class="field-label">Medical Issues:</span>
+        <div class="field-value">{{ $data->medical_issues ?? 'None' }}</div>
+    </div>
+    <div class="field-group">
+        <span class="field-label">Medical Issues File:</span>
+        <div class="field-value">
+            <img style="width: 100px; height:100px" src="{{ $medicalFileBase64 }}">
+        </div>
+    </div>
+    <div class="field-group">
+        <span class="field-label">Further Assistance:</span>
+        <div class="field-value">{{ $data->further_assistance ?? 'None' }}</div>
+    </div>
+    <div class="field-group">
+        <span class="field-label">Person Responsible for Pick and Drop Name:</span>
+        <div class="field-value">{{ $data->pick_drop_person_name ?? 'None' }}</div>
+    </div>
+    <div class="field-group">
+        <span class="field-label">Person Responsible for Pick and Drop Phone:</span>
+        <div class="field-value">{{ $data->pick_drop_person_phone ?? 'None' }}</div>
+    </div>
+    <div class="field-group">
+        <span class="field-label">Person Responsible for Pick and Drop Title:</span>
+        <div class="field-value">{{ $data->pick_drop_person_title ?? 'None' }}</div>
+    </div>
+    <div class="field-group">
+        <span class="field-label">Person Responsible for Pick and Drop File:</span>
+        <div class="field-value">
+            <img style="width: 100px; height:100px" src="{{ $parentIdFileBase64 }}">
+        </div>
+    </div>
 </body>
+
 </html>

@@ -37,5 +37,12 @@ class TuitionEnrollment extends Authenticatable
         'parent1_id',
         'subjects',
         'learning_difficulties',
+        'medical_issues',
+        'medical_issues_file',
+        'further_assistance',
+        'pick_drop_person_name',
+        'pick_drop_person_phone',
+        'pick_drop_person_title',
+        'pick_drop_person_id'
     ];
 }
